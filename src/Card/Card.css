@@ -1,0 +1,39 @@
+
+.cardDiv{
+    border: gray 1px solid;
+    width: 250px;
+    float: right;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    margin-left: 10px;
+
+
+}
+
+.imgCard{
+    width:200px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+.btnCard{
+    background-color: #e4d9d9;
+    color: gray;
+    border-radius: 4px;
+    border: none;
+    width: 50px;
+    font-size: 10px;
+    margin: 5px;
+}
+.highText{
+    color: blue;
+}
+.center {
+    text-align: center;
+    border: 3px solid green;
+    height: 150px;
+}

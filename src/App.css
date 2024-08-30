@@ -1,0 +1,10 @@
+body {
+    text-align: center;
+    font-family: IRANSans, sans-serif;
+    background-color: #E9E9E9;
+}
+
+input , button{
+    font: 16px IRANSans,sans-serif;
+
+}
