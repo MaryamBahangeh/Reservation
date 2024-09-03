@@ -1,0 +1,22 @@
+.main-nav {
+  display: flex;
+}
+
+.logo {
+  display: grid;
+  grid-template-areas:
+    "heart title"
+    "heart subtitle";
+}
+
+.heart {
+  grid-area: heart;
+}
+
+.title {
+  grid-area: title;
+}
+
+.subtitle {
+  grid-area: subtitle;
+}

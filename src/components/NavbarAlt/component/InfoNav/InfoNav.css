@@ -1,0 +1,22 @@
+.info-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav > ul {
+  list-style: none;
+
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav > ul > li > a {
+  color: inherit;
+
+  text-decoration: none;
+}

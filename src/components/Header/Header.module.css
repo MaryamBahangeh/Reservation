@@ -1,0 +1,112 @@
+.header {
+    background-image: repeating-linear-gradient(#1f7168, #005c52 2%);
+    height: 382px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.title {
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    width: 45%;
+    height: 240px;
+    line-height: 120px;
+    /*overflow: hidden;*/
+    margin-top: 51px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    text-overflow: ellipsis;
+}
+
+.subTitle {
+    font-size: 20px;
+    color: white;
+    height: 34px;
+}
+
+.searchDiv {
+    position: absolute;
+    height: 80px;
+    width: 30%;
+    background-color: white;
+    border-radius: 10px;
+    left: 35%;
+    bottom: -40px;
+}
+
+.divCity {
+    float: left;
+}
+.divCity button {
+    color: #1c675f;
+    width: 140px;
+    height: 40px;
+    margin: 20px;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+
+    border-color: #1c675f;
+    border-width: 1px;
+    border-radius: 7px;
+}
+
+.faMapMarker {
+    margin-left: 8px;
+    width: 20px;
+}
+
+.search-container {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 3px 50px 3px 10px;
+    float: right;
+}
+.search-container input {
+    background-color: transparent;
+    outline: none;
+    height: 30px;
+    font-size: 16px;
+    border: 0;
+    width: 100%;
+    text-align: right;
+    margin-top: 25px;
+}
+
+.search-container button {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    border: 0;
+    color: #fff;
+    width: 32px;
+    height: 35px;
+    outline: 0;
+    margin: 25px 23px 27px 9px;
+    padding: 0;
+}
+
+.faSearch {
+    width: 32px;
+    height: auto;
+    color: #919191;
+}
+
+.adressBtn {
+    margin-top: 16px;
+    font: 16px IRANSans;
+    background-color: transparent;
+    height: 24px;
+    padding: 0;
+    text-align: center;
+    color: #757575;
+    border: none;
+}
+.mapCity {
+    margin-left: 8px;
+}
