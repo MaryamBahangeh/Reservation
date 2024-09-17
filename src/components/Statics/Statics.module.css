@@ -1,0 +1,24 @@
+.statics {
+  display: flex;
+  flex-direction: column;
+  margin-top: 14.4rem;
+  margin-bottom: 14.4rem;
+}
+.info {
+  display: flex;
+  height: 12.6rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fimage {
+  align-self: flex-start;
+  width: 80%;
+}
+.limage {
+  align-self: flex-end;
+  width: 80%;
+}
+.statics p {
+  text-align: center;
+}

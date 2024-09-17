@@ -1,0 +1,28 @@
+.consults {
+}
+
+.consult {
+  display: flex;
+  gap: 2.1rem;
+}
+
+.favorite {
+  display: flex;
+  justify-content: space-between;
+}
+.favorite > p {
+  flex-shrink: 0;
+  margin-top: 0;
+}
+
+.consults hr {
+  color: gray;
+  border-width: 1px;
+  margin: 1.6rem;
+  width: 100%;
+  height: 0;
+}
+.bold {
+  font-weight: bold;
+  color: #1f7168;
+}
