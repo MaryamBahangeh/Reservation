@@ -1,26 +1,22 @@
-.banner-card {
+.banner {
+  display: flex;
+  gap: 2.4rem;
+  margin-top: 14.4rem;
+  margin-bottom: 14.4rem;
 }
-.container1 {
+.container {
   display: flex;
   justify-content: space-between;
   border-radius: 2.4rem;
-  background-color: #a8035c;
   height: 26.6rem;
   width: 58.8rem;
 }
-.container2 {
-  display: flex;
-  justify-content: space-between;
-  border-radius: 2.4rem;
-  background-color: #11749e;
-  height: 26.6rem;
-  width: 58.8rem;
-}
+
 .pic {
   width: 25.8rem;
   height: 26.6rem;
 }
-.banner-card p {
+.banner p {
   color: #ffffff;
   width: 33.5rem;
   margin: 0;

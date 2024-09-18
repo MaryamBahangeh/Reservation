@@ -4,6 +4,8 @@ import Statics from "./components/Statics/Statics";
 import Cards from "./components/Cards/Cards";
 import Consults from "./components/Consultants/Consults.tsx";
 import Banner from "./components/Banner/Banner.tsx";
+import NewsLetter from "./components/NewsLetter/NewsLetter.tsx";
+import ButtomBanner from "./components/BottomBanner/BottomBanner.tsx";
 import doctors from "../src/doctors.json";
 import clinics from "../src/clinics.json";
 import consultants from "../src/consultants.json";
@@ -28,6 +30,8 @@ function App() {
         title={["محبوب ترین ", <span>کلینیک های پزشکی</span>]}
         persons={clinics}
       />
+      <NewsLetter />
+      <ButtomBanner />
     </>
   );
 }

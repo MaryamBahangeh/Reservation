@@ -1,0 +1,23 @@
+.bottom-banner-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  justify-content: flex-start;
+}
+.title {
+  font:
+    bold 1.6rem IRANSans,
+    sans-serif;
+  color: #414141;
+}
+
+.subtitle {
+  font:
+    1.2rem IRANSans,
+    sans-serif;
+  color: #757575;
+}
+.bottom-banner-card img {
+  width: 5.6rem;
+  height: 5.6rem;
+}

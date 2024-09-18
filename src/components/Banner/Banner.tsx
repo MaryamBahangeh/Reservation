@@ -13,6 +13,7 @@ function Banner() {
           img: "images/Banner/pic1.png",
           btnText: "مشاهده خدمات ",
           btnSize: "14.8rem",
+          bgColor: "#a8035c",
         }}
       />
       <BannerCard
@@ -22,6 +23,7 @@ function Banner() {
           img: "images/Banner/pic2.png",
           btnText: "نوبت بگیر ",
           btnSize: "14.8rem",
+          bgColor: "#11749e",
         }}
       />
     </div>

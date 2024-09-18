@@ -30,5 +30,21 @@
     "specialName": "متخصص قلب",
     "fields": ["جراحی", "پیوند"],
     "image": "images/Consultants/Pic4.png"
+  },
+  {
+    "id": "1",
+    "name": "معصومه حسینی",
+    "star": "4.5",
+    "specialName": "متخصص نوزادان",
+    "fields": ["جراحی", "رشد قد", "رفلاگس"],
+    "image": "images/Consultants/Pic1.png"
+  },
+  {
+    "id": "2",
+    "name": "سارا احمدی",
+    "star": "3.5",
+    "specialName": "متخصص جراحی",
+    "fields": ["سنگ کلیه", "معده", "اعصاب"],
+    "image": "images/Consultants/Pic2.png"
   }
 ]

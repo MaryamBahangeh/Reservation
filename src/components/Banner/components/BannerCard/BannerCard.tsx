@@ -5,7 +5,10 @@ import { HiOutlineArrowCircleLeft } from "react-icons/hi";
 function BannerCard({ bannerInfo }) {
   return (
     <div className={styles["banner-card"]}>
-      <div className={styles.container1}>
+      <div
+        className={styles.container}
+        style={{ backgroundColor: `${bannerInfo.bgColor}` }}
+      >
         <div className={styles["info-div"]}>
           <p className={styles.title}>{bannerInfo.title}</p>
           <p className={styles.subtitle}>{bannerInfo.description}</p>

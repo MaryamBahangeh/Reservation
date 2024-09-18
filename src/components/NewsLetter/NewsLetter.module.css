@@ -1,0 +1,36 @@
+.news-letter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: repeating-linear-gradient(#1f7168, #005c52 2%);
+  height: 18.4rem;
+  margin-top: 24rem;
+  margin-bottom: 14.4rem;
+}
+.news {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.4rem;
+}
+.news img {
+  width: 11.2rem;
+  height: 11.2rem;
+}
+.news p {
+  width: 19rem;
+  height: 10rem;
+  font:
+    bold 3.2rem IRANSans,
+    sans-serif;
+  color: #ffe4bc;
+}
+
+.imagediv {
+  position: relative;
+  top: -12.2rem;
+}
+.imagediv img {
+  width: 30.3rem;
+  height: 43.9rem;
+}
