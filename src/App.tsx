@@ -12,6 +12,7 @@ import clinics from "./clinics.json";
 import consultants from "./consultants.json";
 import Footer from "./components/Footer/Footer.tsx";
 import "./App.css";
+import Title from "./components/Title/Title.tsx";
 
 function App() {
   return (
@@ -20,7 +21,13 @@ function App() {
       <Header />
       <Statics />
       <Cards
-        title={["محبوب ترین ", <span>پزشکان </span>, "این ماه"]}
+        title={
+          <Title
+            prefix={"محبوب ترین "}
+            main={"پزشکان "}
+            suffix={"این ماه"}
+          ></Title>
+        }
         persons={doctors}
       />
       <Consults

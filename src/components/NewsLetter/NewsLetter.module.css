@@ -4,7 +4,7 @@
   align-items: center;
   background-image: repeating-linear-gradient(#1f7168, #005c52 2%);
   height: 18.4rem;
-  margin-top: 24rem;
+  margin-block-start: 24rem;
   margin-bottom: 14.4rem;
 }
 .news {

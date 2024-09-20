@@ -27,7 +27,7 @@
 }
 .name {
   grid-area: name;
-  margin-top: 0.8rem;
+  margin-block-start: 0.8rem;
 }
 .date {
   grid-area: date;
@@ -41,13 +41,13 @@
 .rate {
   font-size: 1.4rem;
   color: #414141;
-  margin-top: 0.8rem;
+  margin-block-start: 0.8rem;
 }
 .star {
   color: gold;
 }
 .suggest {
-  margin-top: 1.6rem;
+  margin-block-start: 1.6rem;
   border: none;
   color: #1f7168;
   width: 9.7rem;

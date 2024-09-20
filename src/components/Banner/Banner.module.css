@@ -1,7 +1,7 @@
 .banner {
   display: flex;
   gap: 2.4rem;
-  margin-top: 14.4rem;
+  margin-block-start: 14.4rem;
   margin-bottom: 14.4rem;
 }
 .banner p {

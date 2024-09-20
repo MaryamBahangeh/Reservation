@@ -1,7 +1,7 @@
 .statics {
   display: flex;
   flex-direction: column;
-  margin-top: 14.4rem;
+  margin-block-start: 14.4rem;
   margin-bottom: 14.4rem;
 }
 .info {
