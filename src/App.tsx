@@ -6,9 +6,11 @@ import Consults from "./components/Consultants/Consults.tsx";
 import Banner from "./components/Banner/Banner.tsx";
 import NewsLetter from "./components/NewsLetter/NewsLetter.tsx";
 import ButtomBanner from "./components/BottomBanner/BottomBanner.tsx";
-import doctors from "../src/doctors.json";
-import clinics from "../src/clinics.json";
-import consultants from "../src/consultants.json";
+import Feedback from "./components/Feedback/Feedback.tsx";
+import doctors from "./doctors.json";
+import clinics from "./clinics.json";
+import consultants from "./consultants.json";
+import Footer from "./components/Footer/Footer.tsx";
 import "./App.css";
 
 function App() {
@@ -32,6 +34,8 @@ function App() {
       />
       <NewsLetter />
       <ButtomBanner />
+      <Feedback />
+      <Footer />
     </>
   );
 }

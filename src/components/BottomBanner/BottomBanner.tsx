@@ -39,11 +39,6 @@ function BottomBanner(props) {
           subtitle="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و بااستفاده از طراحان گرافیک است."
           img="images/Insurance/icon.png"
         />
-        <BottomBannerCard
-          title="بیمه دکترتو در روزهای سخت همراه"
-          subtitle="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و بااستفاده از طراحان گرافیک است."
-          img="images/Insurance/icon.png"
-        />
       </div>
     </div>
   );

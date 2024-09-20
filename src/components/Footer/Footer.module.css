@@ -1,0 +1,170 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4.8rem 12.1rem 4.8rem 12.1rem;
+  /*gap: 4.8rem;*/
+}
+.about {
+  display: flex;
+  gap: 2.4rem;
+  margin-bottom: 4.8rem;
+}
+.log-div {
+  display: grid;
+  grid-template-areas:
+    "logo"
+    "nobito";
+}
+.logo {
+  grid-area: logo;
+  width: 11.2rem;
+  height: 11.2rem;
+}
+.nobito {
+  grid-area: nobito;
+  width: 10.5rem;
+}
+.title {
+  font:
+    bold 2rem IRANSans,
+    sans-serif;
+  color: #414141;
+  margin-bottom: 2.4rem;
+  margin-top: 2rem;
+}
+
+.subtitle {
+  font:
+    1.6rem IRANSans,
+    sans-serif;
+  color: #757575;
+  font-size: 1.4rem;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4.8rem;
+}
+.menu-footer {
+  display: flex;
+  gap: 6.4rem;
+}
+.footer nav ul {
+  list-style: none;
+  padding: 0;
+}
+.footer li > a {
+  text-decoration: none;
+  color: #757575;
+  font:
+    1.6rem IRANSans,
+    Serif;
+}
+.footer li:first-child a {
+  font: bold 2.2rem IRANSans;
+  color: #414141;
+}
+.footer li:first-child {
+  margin-bottom: 3.2rem;
+}
+.news-letter {
+  align-self: flex-end;
+}
+.div-email {
+  display: flex;
+  gap: 1.6rem;
+}
+.news-letter p {
+  font: bold 1.2rem IRANSans;
+}
+.news-letter p:first-child {
+  font: bold 1.6rem IRANSans;
+  color: #414141;
+}
+.email-box {
+  border: 1px solid #919191;
+  width: 33.6rem;
+  height: 4.8rem;
+  border-radius: 0.8rem;
+  padding: 1.5rem 1.2rem 1.3rem;
+
+  box-sizing: border-box;
+}
+.btn {
+  height: 4.8rem;
+  width: 10rem;
+  color: #f9f9f9;
+
+  /*padding: 1.2rem 1.6rem;*/
+
+  text-align: center;
+  background-color: #1f7168;
+  border-radius: 0.8rem;
+  border: none;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  color: #f9f9f9;
+  width: 2rem;
+  height: 2rem;
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4.8rem;
+}
+
+.communication div {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.communication img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.certificate {
+  justify-self: flex-end;
+}
+.certificate div {
+  display: flex;
+  gap: 2.4rem;
+  width: 41.4rem;
+}
+.certificate img {
+  width: 8rem;
+  height: 8rem;
+}
+.footer hr {
+  color: gray;
+  border-width: 1px;
+  width: 100%;
+  /*align-self: center;*/
+  height: 0;
+  margin-top: 0;
+  margin-bottom: 1.4rem;
+}
+.social {
+  display: flex;
+  justify-content: space-between;
+}
+.social > div {
+  display: flex;
+}
+.footer .social p {
+  margin-top: 0;
+  margin-right: 0.8rem;
+}
+.social-icons {
+  display: flex;
+  gap: 1.6rem;
+}
+.icons {
+  width: 2.4rem;
+  height: 2.4rem;
+}
