@@ -5,16 +5,12 @@ function Banner() {
   return (
     <div className={styles.banner}>
       <BannerCard
-        bannerInfo={{
-          title: "خدمات پزشکی رو برای شما در دسترستر کردیم",
-          description:
-            "فقط با چند کلیک به خدمات پزشکی مورد نیاز افراد کم توان جسمی(حرکتی)دسترسی پیدا میکنید.",
-
-          img: "images/Banner/pic1.png",
-          btnText: "مشاهده خدمات ",
-          btnSize: "14.8rem",
-          bgColor: "#a8035c",
-        }}
+        title="خدمات پزشکی رو برای شما در دسترستر کردیم"
+        description="فقط با چند کلیک به خدمات پزشکی مورد نیاز افراد کم توان جسمی(حرکتی)دسترسی پیدا میکنید."
+        img="images/Banner/pic1.png"
+        btnText="مشاهده خدمات "
+        btnSize="14.8rem"
+        bgColor="#a8035c"
       />
       <BannerCard
         bannerInfo={{
