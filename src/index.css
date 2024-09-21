@@ -1,3 +1,18 @@
 html {
+  font-family: IranSansX, sans-serif;
   font-size: 62.5%;
+}
+
+input,
+label,
+select,
+textarea,
+button,
+fieldset,
+legend,
+datalist,
+output,
+option,
+optgroup {
+  font-family: inherit;
 }
