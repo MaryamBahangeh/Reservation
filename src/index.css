@@ -17,6 +17,13 @@ optgroup {
   font-family: inherit;
 }
 
+body {
+  font-size: 1.6rem;
+  color: #757575;
+  margin: 0;
+  padding-block: 4.8rem;
+}
+
 #root > * {
   padding-inline: 12rem;
 }
