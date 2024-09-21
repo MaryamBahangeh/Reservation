@@ -16,3 +16,7 @@ option,
 optgroup {
   font-family: inherit;
 }
+
+#root > * {
+  padding-inline: 12rem;
+}
