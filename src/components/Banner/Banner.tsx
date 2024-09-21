@@ -13,14 +13,12 @@ function Banner() {
         bgColor="#a8035c"
       />
       <BannerCard
-        bannerInfo={{
-          title: "مشغله زندگی نمیزاره بیایی دکتر؟ مشاوره غیر حضوری بگیر",
-          description: `اگر زمان کافی برای مراجعه به پزشک رو ندارید میتونید از طریق مشاوره غیر حضوری با پزشک صحبت کنید`,
-          img: "images/Banner/pic2.png",
-          btnText: "نوبت بگیر ",
-          btnSize: "14.8rem",
-          bgColor: "#11749e",
-        }}
+        title="مشغله زندگی نمیزاره بیایی دکتر؟ مشاوره غیر حضوری بگیر"
+        description="اگر زمان کافی برای مراجعه به پزشک رو ندارید میتونید از طریق مشاوره غیر حضوری با پزشک صحبت کنید"
+        img="images/Banner/pic2.png"
+        btnText="نوبت بگیر "
+        btnSize="14.8rem"
+        bgColor="#11749e"
       />
     </div>
   );
