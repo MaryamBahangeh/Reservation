@@ -1,6 +1,10 @@
 .banner {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(54rem, 60rem));
-  gap: 2.4rem;
   padding-block-start: 14.4rem;
+
+  .cards {
+    overflow: hidden;
+
+    display: flex;
+    gap: 2.4rem;
+  }
 }

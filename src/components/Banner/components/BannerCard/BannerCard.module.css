@@ -1,22 +1,29 @@
-.banner-card {
-  max-width: 60rem;
-  .container {
-    display: flex;
-    justify-content: space-between;
-    border-radius: 2.4rem;
-  }
-  .primary {
+.container {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 2.4rem;
+
+  min-inline-size: 55rem;
+
+  &.primary {
     background-color: hsl(328, 96%, 34%);
   }
-  .secondary {
+
+  &.secondary {
     background-color: hsl(198, 81%, 34%);
   }
+
   .pic {
-    height: 100%;
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    object-position: bottom;
   }
+
   p {
     color: hsl(0, 0%, 100%);
   }
+
   .info-div {
     padding-inline: 4rem 0;
     padding-block: 3.2rem;
@@ -25,6 +32,7 @@
     justify-content: center;
     align-items: center;
   }
+
   .info-div button {
     justify-self: end;
     text-align: center;
@@ -40,6 +48,7 @@
     padding-block: 0.8rem;
     font-size: 1.4rem;
   }
+
   .info-div p {
     color: hsl(0, 0%, 100%);
   }
@@ -49,10 +58,12 @@
     width: 2.4rem;
     height: 2.4rem;
   }
+
   .subtitle {
     font-size: 1.4rem;
     padding-block-end: 1.6rem;
   }
+
   .title {
     font-size: 2.2rem;
   }

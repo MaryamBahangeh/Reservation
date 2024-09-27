@@ -8,6 +8,7 @@ html {
 *::after {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 input,
@@ -33,7 +34,7 @@ body {
 }
 
 #root {
-  max-inline-size: 120rem;
+  max-inline-size: 144rem;
 
   margin: auto;
 }
