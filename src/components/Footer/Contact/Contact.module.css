@@ -1,0 +1,31 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+
+  .communication {
+    display: grid;
+    gap: 3.2rem;
+  }
+  .communication div {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .communication img {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+  .certificate {
+    display: grid;
+    grid-template-columns: min-content;
+    gap: 2.4rem;
+  }
+  .certificate div {
+    display: flex;
+    gap: 2.4rem;
+  }
+  .certificate img {
+    width: 8rem;
+    height: 8rem;
+  }
+}

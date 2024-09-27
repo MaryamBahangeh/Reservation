@@ -1,7 +1,6 @@
 import styles from "./Card.module.css";
-import doctorimg from "../../../assets/DoctorPic.png";
 import { FaStar, FaMapMarker } from "react-icons/fa";
-function Card({ person }) {
+function Card({ person }: object) {
   return (
     <div className={styles.card}>
       <img src={person.image} />
@@ -14,12 +13,11 @@ function Card({ person }) {
       <p className={styles.special}>{person.clinicSpecialName}</p>
       <p className={styles.client}> {person.happyPatient}بیمار راضی </p>
       <div className={styles.fields}>
-        {person.fields.map((field) => (
+        {person.fields.map((field: string) => (
           <button>{field}</button>
         ))}
       </div>
       <hr />
-
       <p className={styles.address}>
         <FaMapMarker className={styles.map} />
         {person.address}

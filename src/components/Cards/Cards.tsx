@@ -1,11 +1,16 @@
 import styles from "./Cards.module.css";
 import Card from "./Card/Card.tsx";
-import Title from "../Title/Title.tsx";
-function Cards({ title, persons }) {
+import Title, { titleProps } from "../Title/Title.tsx";
+type props = {
+  title: titleProps;
+  persons: object[];
+};
+
+function Cards({ title, persons }: { props }) {
   return (
     <div className={styles.cards}>
-      <Title title={title} />
-      <div className={styles.card}>
+      <Title prefix={title.prefix} main={title.main} suffix={title.suffix} />
+      <div className={styles.container}>
         {persons.map((person) => (
           <Card key={person.id} person={person} />
         ))}

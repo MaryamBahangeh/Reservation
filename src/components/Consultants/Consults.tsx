@@ -1,11 +1,19 @@
 import Consult from "./Consult/Consult.tsx";
-import Title from "../Title/Title.tsx";
+import Title, { titleProps } from "../Title/Title.tsx";
 import styles from "./Consults.module.css";
-function Consults({ title, persons }) {
+type props = {
+  title: titleProps;
+  persons: object[];
+};
+function Consults({ title, persons }: props) {
   return (
     <div className={styles.consults}>
-      <Title title={title}></Title>
-      <div className={styles.consult}>
+      <Title
+        prefix={title.prefix}
+        suffix={title.suffix}
+        main={title.main}
+      ></Title>
+      <div className={styles.container}>
         {persons.map((person) => (
           <Consult person={person} />
         ))}

@@ -1,0 +1,7 @@
+.message {
+  img {
+    inset-block-end: 90rem;
+    inset-inline-end: 5rem;
+    position: absolute;
+  }
+}

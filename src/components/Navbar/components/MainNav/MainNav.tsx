@@ -1,7 +1,7 @@
 import styles from "./MainNav.module.css";
-import logo from "../../../../assets/Logo.png";
-import logoNobito from "../../../../assets/logoNobito.png";
-import logoPlatform from "../../../../assets/logoPlatform.png";
+import logo from "../../../../../public/images/logo/Logo.png";
+import logoNobito from "../../../../../public/images/logo/logoNobito.png";
+import logoPlatform from "../../../../../public/images/logo/logoPlatform.png";
 import { FaRegBell } from "react-icons/fa";
 function MainNav() {
   return (

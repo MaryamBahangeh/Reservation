@@ -2,7 +2,7 @@ import styles from ".//Consult.module.css";
 import consultpic from "../../../assets/consultpic.png";
 import { FaStar } from "react-icons/fa";
 
-function Consult({ person }) {
+function Consult({ person }: object) {
   return (
     <div className={styles.consult}>
       <img src={person.image} className={styles.consultpic} />

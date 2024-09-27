@@ -1,13 +1,20 @@
 import React from "react";
 import styles from "./Title.module.css";
-function Title({ title }) {
+export type titleProps = {
+  prefix?: string;
+  main: string;
+  suffix?: string;
+};
+function Title({ prefix, main, suffix }: titleProps) {
   return (
-    <div>
-      <div className={styles.favorite}>
-        <p>{title}</p>
-        <hr className={styles.hr} />
-        <p>مشاهده همه</p>
-      </div>
+    <div className={styles.favorite}>
+      <p>
+        {prefix}
+        <span>{main}</span>
+        {suffix}
+      </p>
+      <hr className={styles.hr} />
+      <p>مشاهده همه</p>
     </div>
   );
 }

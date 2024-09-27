@@ -7,10 +7,11 @@ import Banner from "./components/Banner/Banner.tsx";
 import NewsLetter from "./components/NewsLetter/NewsLetter.tsx";
 import ButtomBanner from "./components/BottomBanner/BottomBanner.tsx";
 import Feedback from "./components/Feedback/Feedback.tsx";
-import doctors from "./doctors.json";
-import clinics from "./clinics.json";
-import consultants from "./consultants.json";
+import doctors from "./assets/data/doctors.json";
+import clinics from "./assets/data/clinics.json";
+import consultants from "./assets/data/consultants.json";
 import Footer from "./components/Footer/Footer.tsx";
+import Message from "./components/Message/Message.tsx";
 import "./App.css";
 
 function App() {
@@ -20,22 +21,34 @@ function App() {
       <Header />
       <Statics />
       <Cards
-        title={["محبوب ترین ", <span>پزشکان </span>, "این ماه"]}
+        title={{
+          prefix: "محبوب ترین ",
+          main: "پزشکان ",
+          suffix: "این ماه",
+        }}
         persons={doctors}
       />
       <Consults
-        title={[<span>مشاورین </span>, "در دسترس"]}
+        title={{
+          prefix: "",
+          main: "مشاورین ",
+          suffix: "در دسترس",
+        }}
         persons={consultants}
       />
       <Banner />
       <Cards
-        title={["محبوب ترین ", <span>کلینیک های پزشکی</span>]}
+        title={{
+          prefix: "محبوب ترین ",
+          main: "کلینیک های پزشکی",
+        }}
         persons={clinics}
       />
       <NewsLetter />
       <ButtomBanner />
       <Feedback />
       <Footer />
+      <Message />
     </>
   );
 }

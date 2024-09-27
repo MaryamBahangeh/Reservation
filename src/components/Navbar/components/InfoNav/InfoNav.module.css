@@ -1,20 +1,24 @@
 .infoNav {
   display: flex;
   justify-content: space-between;
-}
-.social {
-  display: flex;
-  gap: 2.4rem;
-}
-.icons {
-  width: 2.4rem;
-  height: 2.4rem;
-}
-nav > ul {
-  display: flex;
-  gap: 2.4rem;
-  list-style: none;
-}
-nav > ul > a {
-  text-decoration: none;
+  align-items: center;
+  padding-block: 1.6rem;
+
+  .social {
+    display: flex;
+    gap: 2.4rem;
+  }
+  .icons {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+  nav > ul {
+    display: flex;
+    gap: 2.4rem;
+    list-style: none;
+  }
+  nav > ul > li > a {
+    text-decoration: none;
+    color: hsl(0, 0%, 46%);
+  }
 }

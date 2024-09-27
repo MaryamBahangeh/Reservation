@@ -1,6 +1,6 @@
-import React from "react";
+// import React from "react";
 import styles from "./Feedback.module.css";
-import feedbacks from "../../feedback.json";
+import feedbacks from "../../assets/data/feedback.json";
 import FeedbackCard from "./FeedbackCard/FeedbackCard.tsx";
 function Feedback(props) {
   return (

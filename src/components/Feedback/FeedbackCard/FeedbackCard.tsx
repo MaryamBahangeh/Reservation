@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./FeedbackCard.module.css";
 import { FaStar } from "react-icons/fa";
 
-function FeedbackCard({ info }) {
+function FeedbackCard({ info }: object) {
   return (
     <div className={styles["feedback-card"]}>
       <div className={styles.info}>
@@ -17,7 +17,7 @@ function FeedbackCard({ info }) {
       </div>
 
       <p className={styles.date}>{info.desc}</p>
-      <button className={styles.suggest}>{info.suggestion}</button>
+      <button>{info.suggestion}</button>
     </div>
   );
 }

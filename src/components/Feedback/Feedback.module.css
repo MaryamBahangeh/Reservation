@@ -1,3 +1,6 @@
 .feedback {
   display: flex;
+  gap: 2.4rem;
+  position: relative;
+  padding-block-end: 14.4rem;
 }

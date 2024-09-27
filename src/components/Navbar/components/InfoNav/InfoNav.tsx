@@ -15,7 +15,6 @@ function InfoNav() {
         <FaYoutube className={styles.icons} />
         <FaLinkedin className={styles.icons} />
       </div>
-
       <nav>
         <ul>
           <li>
@@ -29,7 +28,6 @@ function InfoNav() {
           </li>
           <li>
             <a href="#">
-              {" "}
               <FaMapMarker /> + انتخاب آدرس
             </a>
           </li>

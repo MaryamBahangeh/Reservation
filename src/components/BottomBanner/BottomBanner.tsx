@@ -1,10 +1,8 @@
-import React from "react";
+// import React from "react";
 import styles from "./BottomBanner.module.css";
 
-import BannerCard from "../Banner/components/BannerCard/BannerCard.tsx";
-import { HiOutlineArrowCircleLeft } from "react-icons/hi";
 import BottomBannerCard from "./BottomBannerCard/BottomBannerCard.tsx";
-function BottomBanner(props) {
+function BottomBanner() {
   return (
     <div className={styles["bottom-banner"]}>
       <div className={styles.container}>
@@ -22,7 +20,6 @@ function BottomBanner(props) {
         </div>
         <img src="images/Banner/BottomBanner.png" className={styles.pic} />
       </div>
-
       <div className={styles.option}>
         <BottomBannerCard
           title="بیمه دکترتو در روزهای سخت همراه"
