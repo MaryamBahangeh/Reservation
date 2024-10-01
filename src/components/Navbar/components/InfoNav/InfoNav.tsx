@@ -1,19 +1,12 @@
 import styles from "./InfoNav.module.css";
-import {
-  FaInstagram,
-  FaTelegram,
-  FaLinkedin,
-  FaYoutube,
-  FaMapMarker,
-} from "react-icons/fa";
 function InfoNav() {
   return (
     <div className={styles.infoNav}>
       <div className={styles.social}>
-        <FaInstagram className={styles.icons} />
-        <FaTelegram className={styles.icons} />
-        <FaYoutube className={styles.icons} />
-        <FaLinkedin className={styles.icons} />
+        <img src="/images/icons/instagram.png" />
+        <img src="/images/icons/telegram.png" />
+        <img src="/images/icons/youtube.png" />
+        <img src="/images/icons/linkedin.png" />
       </div>
       <nav>
         <ul>
@@ -27,8 +20,8 @@ function InfoNav() {
             <a href="#">درباره ما</a>
           </li>
           <li>
-            <a href="#">
-              <FaMapMarker /> + انتخاب آدرس
+            <a className={styles.address} href="#">
+              <img src="/images/icons/balck-location.png" /> + انتخاب آدرس
             </a>
           </li>
         </ul>

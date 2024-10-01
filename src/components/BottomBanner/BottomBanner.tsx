@@ -18,23 +18,23 @@ function BottomBanner() {
           </p>
           <button>مطالعه بیشتر</button>
         </div>
-        <img src="images/Banner/BottomBanner.png" className={styles.pic} />
+        <img src="/images/insurance/insurance.png" className={styles.pic} />
       </div>
       <div className={styles.option}>
         <BottomBannerCard
           title="بیمه دکترتو در روزهای سخت همراه"
           subtitle="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و بااستفاده از طراحان گرافیک است."
-          img="images/Insurance/icon.png"
+          img="/images/insurance/insurance-icon.png"
         />
         <BottomBannerCard
           title="بیمه دکترتو در روزهای سخت همراه"
           subtitle="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و بااستفاده از طراحان گرافیک است."
-          img="images/Insurance/icon.png"
+          img="/images/insurance/insurance-icon.png"
         />
         <BottomBannerCard
           title="بیمه دکترتو در روزهای سخت همراه"
           subtitle="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و بااستفاده از طراحان گرافیک است."
-          img="images/Insurance/icon.png"
+          img="/images/insurance/insurance-icon.png"
         />
       </div>
     </div>

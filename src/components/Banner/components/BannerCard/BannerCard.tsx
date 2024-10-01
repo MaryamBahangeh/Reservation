@@ -1,6 +1,5 @@
 // import React from "react";
 import styles from "./BannerCard.module.css";
-import { HiOutlineArrowCircleLeft } from "react-icons/hi";
 type props = {
   isPrimary: boolean;
   title: string;
@@ -19,7 +18,7 @@ function BannerCard({ isPrimary, title, description, btnText, img }: props) {
           <p className={styles.subtitle}>{description}</p>
           <button>
             {btnText}
-            <HiOutlineArrowCircleLeft className={styles.arrow} />
+            <img src="/images/icons/arrow-left-black.png" />
           </button>
         </div>
         <img src={img} className={styles.pic} />

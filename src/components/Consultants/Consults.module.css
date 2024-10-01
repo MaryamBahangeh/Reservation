@@ -1,7 +1,10 @@
 .consults {
+  display: grid;
+  gap: 5.6rem;
+
   .container {
     display: flex;
-    gap: 2.1rem;
+    gap: 2.4rem;
     overflow: hidden;
   }
 }

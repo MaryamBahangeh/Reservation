@@ -1,60 +1,81 @@
 .card {
   display: flex;
   justify-content: center;
-  gap: 1.2rem;
+  gap: 1.6rem;
   flex-direction: column;
   border-radius: 1.6rem;
   flex-basis: 28.2rem;
   flex-shrink: 0;
   flex-grow: 1;
-  padding-block: 1.6rem;
-  padding-inline: 1.6rem;
+  padding-block: 1.5rem;
+  padding-inline: 1.5rem;
   border: 0.1rem solid hsl(0, 4%, 70%);
+  background-color: hsl(0, 0%, 100%);
 
   .doctorimg {
     border-radius: 1.2rem;
-    width: 25rem;
   }
 
-  .name {
-    display: flex;
-    justify-content: space-between;
+  .info {
+    display: grid;
+
+    .name {
+      display: flex;
+      justify-content: space-between;
+      padding-block-end: 1.2rem;
+      .star {
+        display: flex;
+        gap: 0.8rem;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4rem;
+      }
+      .doctor-name {
+        font-weight: bold;
+      }
+    }
+
+    .special {
+      font-size: 1.4rem;
+      padding-block-end: 2.4rem;
+    }
+
+    .client {
+      color: hsl(173, 57%, 28%);
+      font-size: 1.4rem;
+      padding-block-end: 2.4rem;
+    }
+
+    .fields {
+      display: flex;
+      justify-content: center;
+      gap: 0.8rem;
+
+      button {
+        background-color: hsl(0, 0%, 95%);
+        color: hsl(0, 0%, 46%);
+        border-radius: 2.4rem;
+        border: none;
+        font-size: 1.2rem;
+        padding-inline: 1.2rem;
+        padding-block: 0.2rem;
+      }
+    }
   }
-  .star {
-    color: hsl(51, 100%, 50%);
-  }
-  .special {
-    color: hsl(0, 0%, 57%);
-    align-self: flex-start;
-  }
-  .client {
-    color: hsl(173, 57%, 28%);
-    align-self: flex-start;
-  }
-  .fields {
-    display: flex;
-    justify-content: center;
-    gap: 0.8rem;
-  }
-  .fields button {
-    background-color: hsl(0, 0%, 46%);
-    color: hsl(0, 0%, 75%);
-    border-radius: 2.4rem;
-    border: none;
-    font-size: 1rem;
-  }
+
   .address {
     align-self: flex-start;
     font-size: 1.4rem;
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    justify-content: center;
   }
-  .map {
-    padding-inline-end: 0.5rem;
-  }
+
   hr {
     color: gray;
     border-width: 0.1rem;
     width: 100%;
     align-self: center;
-    margin-block: 1.6rem 0;
   }
 }

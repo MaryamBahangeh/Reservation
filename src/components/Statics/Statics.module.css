@@ -1,22 +1,32 @@
 .statics {
   display: flex;
   flex-direction: column;
-  padding-block-start: 14.4rem;
+  margin-block: 14.4rem;
+  justify-content: center;
+
   .info {
     display: flex;
-    height: 12.6rem;
-    justify-content: space-around;
+    flex-flow: row wrap;
+    justify-content: center;
     align-items: center;
+    gap: 14rem;
+    padding-block: 1.6rem;
   }
   .fimage {
-    align-self: flex-start;
-    width: 80%;
+    width: 88%;
   }
   .limage {
     align-self: flex-end;
-    width: 80%;
+    width: 88%;
   }
-  p {
+  .title {
     text-align: center;
+    font-size: 3.2rem;
+    font-weight: bold;
+    padding-block-end: 1.6rem;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 2rem;
   }
 }

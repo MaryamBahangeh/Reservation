@@ -2,15 +2,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block: 1.6rem;
+  margin-block: 1.6rem;
 
   .social {
     display: flex;
     gap: 2.4rem;
   }
   .icons {
-    width: 2.4rem;
-    height: 2.4rem;
+    font-size: 2.4rem;
   }
   nav > ul {
     display: flex;
@@ -20,5 +19,10 @@
   nav > ul > li > a {
     text-decoration: none;
     color: hsl(0, 0%, 46%);
+  }
+  nav .address {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
   }
 }

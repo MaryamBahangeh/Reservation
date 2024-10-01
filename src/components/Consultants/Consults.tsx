@@ -1,5 +1,6 @@
 import Consult from "./Consult/Consult.tsx";
 import Title, { titleProps } from "../Title/Title.tsx";
+import Indicator from "../../components/Indicator/Indicator.tsx";
 import styles from "./Consults.module.css";
 type props = {
   title: titleProps;
@@ -18,6 +19,7 @@ function Consults({ title, persons }: props) {
           <Consult person={person} />
         ))}
       </div>
+      <Indicator />
     </div>
   );
 }

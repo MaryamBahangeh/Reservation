@@ -1,6 +1,12 @@
 .feedback {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 5.6rem;
+  margin-block-end: 14.4rem;
+  position: relative;
+}
+.container {
   display: flex;
   gap: 2.4rem;
-  position: relative;
-  padding-block-end: 14.4rem;
 }

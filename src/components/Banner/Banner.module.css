@@ -1,6 +1,8 @@
 .banner {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(54rem, 60rem));
+  /*display: grid;*/
+  /*grid-template-columns: repeat(auto-fill, minmax(54rem, 60rem));*/
+  display: flex;
   gap: 2.4rem;
-  padding-block-start: 14.4rem;
+  padding-block: 14.4rem;
+  overflow: hidden;
 }

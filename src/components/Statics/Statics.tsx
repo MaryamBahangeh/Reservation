@@ -1,29 +1,27 @@
-import rec6 from "../../../public/images/statics/rectangleRight.png";
-import rec7 from "../../../public/images/statics/rectangleLeft.png";
 import styles from "./Statics.module.css";
 function Statics() {
   return (
     <div className={styles.statics}>
-      <img src={rec6} className={styles.fimage} />
+      <img src="/images/statics/rectangleRight.png" className={styles.fimage} />
       <div className={styles.info}>
         <div>
-          <p>+3000</p>
-          <p>پزشک آماده به خدمت</p>
+          <p className={styles.title}>{(30000).toLocaleString()}+</p>
+          <p className={styles.subtitle}>پزشک آماده به خدمت</p>
         </div>
         <div>
-          <p> +10000</p>
-          <p>درمانگر سیار</p>
+          <p className={styles.title}>{(10000).toLocaleString()}+</p>
+          <p className={styles.subtitle}>درمانگر سیار</p>
         </div>
         <div>
-          <p>+3000</p>
-          <p>پزشک آماده به خدمت</p>
+          <p className={styles.title}>{(40000).toLocaleString()}+</p>
+          <p className={styles.subtitle}>نوبت دهی روزانه</p>
         </div>
         <div>
-          <p> +10000</p>
-          <p>درمانگر سیار</p>
+          <p className={styles.title}>{(15000).toLocaleString()}+</p>
+          <p className={styles.subtitle}>مراکز درمانی</p>
         </div>
       </div>
-      <img src={rec7} className={styles.limage} />
+      <img src="/images/statics/rectangleLeft.png" className={styles.limage} />
     </div>
   );
 }

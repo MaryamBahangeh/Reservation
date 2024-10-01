@@ -3,9 +3,6 @@ import styles from "./Footer.module.css";
 import AboutUs from "./AboutUs/AboutUs.tsx";
 import Content from "./Content/Content.tsx";
 import Contact from "./Contact/Contact.tsx";
-import logoNobito from "../../../public/images/logo/logoNobito.png";
-import logo from "../../../public/images/logo/Logo.png";
-import { HiOutlineArrowCircleLeft } from "react-icons/hi";
 import { FaInstagram, FaLinkedin, FaTelegram, FaYoutube } from "react-icons/fa";
 
 function Footer(props) {
@@ -16,14 +13,14 @@ function Footer(props) {
       <Contact />
       <div className={styles.social}>
         <div>
-          <img className={styles.icons} src="images/copywrite/copy.png" />
+          <img className={styles.icons} src="/images/icons/copy.png" />
           <p>تمامی حقوق این وبسایت متعلق به شرکت نوبیتو است</p>
         </div>
         <div className={styles["social-icons"]}>
+          <FaLinkedin className={styles.icons} />
           <FaInstagram className={styles.icons} />
           <FaTelegram className={styles.icons} />
           <FaYoutube className={styles.icons} />
-          <FaLinkedin className={styles.icons} />
         </div>
       </div>
     </div>

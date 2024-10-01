@@ -8,6 +8,7 @@
   border-radius: 1.6rem;
   padding-block: 2.4rem;
   padding-inline: 2.4rem;
+  background-color: hsl(0, 0%, 100%);
 
   .info {
     display: flex;
@@ -21,7 +22,6 @@
   }
   .img {
     grid-area: img;
-    width: 7.2rem;
     padding-inline-start: 1.6rem;
   }
   .name {
@@ -43,9 +43,16 @@
   }
   button {
     margin-block-start: 1.6rem;
+
     border: none;
-    color: hsl(173, 57%, 28%);
     font-size: 1.2rem;
     align-self: flex-end;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    color: hsl(173, 57%, 28%);
+    background-color: hsl(0, 0%, 100%);
   }
 }

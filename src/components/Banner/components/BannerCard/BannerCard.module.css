@@ -1,5 +1,6 @@
 .banner-card {
   max-width: 60rem;
+  flex-shrink: 0;
   .container {
     display: flex;
     justify-content: space-between;
@@ -24,31 +25,28 @@
     gap: 1.6rem;
     justify-content: center;
     align-items: center;
-  }
-  .info-div button {
-    justify-self: end;
-    text-align: center;
-    color: hsl(0, 0%, 23%);
-    background-color: hsl(0, 0%, 100%);
-    border: none;
-    border-radius: 0.8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.8rem;
-    padding-inline: 1.2rem;
-    padding-block: 0.8rem;
-    font-size: 1.4rem;
-  }
-  .info-div p {
-    color: hsl(0, 0%, 100%);
+
+    p {
+      color: hsl(0, 0%, 100%);
+    }
+
+    button {
+      justify-self: end;
+      text-align: center;
+      color: hsl(0, 0%, 23%);
+      background-color: hsl(0, 0%, 100%);
+      border: none;
+      border-radius: 0.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.8rem;
+      padding-inline: 1.2rem;
+      padding-block: 0.8rem;
+      font-size: 1.4rem;
+    }
   }
 
-  .arrow {
-    color: hsl(0, 0%, 23%);
-    width: 2.4rem;
-    height: 2.4rem;
-  }
   .subtitle {
     font-size: 1.4rem;
     padding-block-end: 1.6rem;

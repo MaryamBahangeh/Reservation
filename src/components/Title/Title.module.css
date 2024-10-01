@@ -1,7 +1,6 @@
 .favorite {
   display: flex;
   justify-content: space-between;
-  padding-block: 14.4rem 5.6rem;
 
   p {
     flex-shrink: 0;
@@ -10,6 +9,17 @@
     font-weight: bold;
     color: hsl(173, 57%, 28%);
   }
+  .title-text {
+    font-size: 2rem;
+  }
+  .subtitle-text {
+    font-size: 1.6rem;
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    justify-content: center;
+  }
+
   hr {
     color: gray;
     border-width: 0.1rem;

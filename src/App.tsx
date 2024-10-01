@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar/Navbar.tsx";
-import Header from "./components/Header/Header.tsx";
+import Hero from "./components/Hero/Hero.tsx";
 import Statics from "./components/Statics/Statics";
 import Cards from "./components/Cards/Cards";
 import Consults from "./components/Consultants/Consults.tsx";
@@ -18,11 +18,11 @@ function App() {
   return (
     <>
       <Navbar />
-      <Header />
+      <Hero />
       <Statics />
       <Cards
         title={{
-          prefix: "محبوب ترین ",
+          prefix: "محبوبترین ",
           main: "پزشکان ",
           suffix: "این ماه",
         }}
@@ -39,7 +39,7 @@ function App() {
       <Banner />
       <Cards
         title={{
-          prefix: "محبوب ترین ",
+          prefix: "محبوبترین ",
           main: "کلینیک های پزشکی",
         }}
         persons={clinics}

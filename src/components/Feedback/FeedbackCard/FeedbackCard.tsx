@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./FeedbackCard.module.css";
-import { FaStar } from "react-icons/fa";
 
 function FeedbackCard({ info }: object) {
   return (
@@ -12,12 +11,15 @@ function FeedbackCard({ info }: object) {
           <p className={styles.date}>{info.date}</p>
         </div>
         <p className={styles.rate}>
-          {info.star} <FaStar className={styles.star} />
+          {info.star} <img src="/images/icons/star.png" />
         </p>
       </div>
 
       <p className={styles.date}>{info.desc}</p>
-      <button>{info.suggestion}</button>
+      <button>
+        <img src="/images/icons/like.png" />
+        {info.suggestion}
+      </button>
     </div>
   );
 }

@@ -3,6 +3,7 @@
   padding-block: 4.8rem;
   padding-inline: 12rem;
   gap: 4.8rem;
+  background-color: hsl(0, 0%, 100%);
 
   .social {
     display: flex;
@@ -15,13 +16,13 @@
   }
   .social p {
     padding-inline-start: 0.8rem;
+    flex-shrink: 0;
   }
   .social-icons {
     display: flex;
     gap: 1.6rem;
   }
   .icons {
-    width: 2.4rem;
-    height: 2.4rem;
+    font-size: 3.2rem;
   }
 }
