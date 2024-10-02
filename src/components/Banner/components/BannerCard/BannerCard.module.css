@@ -1,23 +1,22 @@
-.banner-card {
-  max-width: 60rem;
-  flex-shrink: 0;
-  .container {
-    display: flex;
-    justify-content: space-between;
-    border-radius: 2.4rem;
-  }
-  .primary {
+.container {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 2.4rem;
+  min-inline-size: 55rem;
+
+  &.primary {
     background-color: hsl(328, 96%, 34%);
   }
-  .secondary {
+
+  &.secondary {
     background-color: hsl(198, 81%, 34%);
   }
+
   .pic {
-    height: 100%;
+    height: auto;
+    width: 20rem;
   }
-  p {
-    color: hsl(0, 0%, 100%);
-  }
+
   .info-div {
     padding-inline: 4rem 0;
     padding-block: 3.2rem;
@@ -25,10 +24,7 @@
     gap: 1.6rem;
     justify-content: center;
     align-items: center;
-
-    p {
-      color: hsl(0, 0%, 100%);
-    }
+    color: hsl(0, 0%, 100%);
 
     button {
       justify-self: end;
@@ -51,6 +47,7 @@
     font-size: 1.4rem;
     padding-block-end: 1.6rem;
   }
+
   .title {
     font-size: 2.2rem;
   }

@@ -7,13 +7,13 @@ function Card({ person }) {
 
       <div className={styles.info}>
         <div className={styles.name}>
-          <p className={styles["doctor-name"]}>{person.name}</p>
-          <p className={styles.star}>
+          <div className={styles["doctor-name"]}>{person.name}</div>
+          <span className={styles.star}>
             {person.star} <img alt="" src="/images/icons/star.png"></img>
-          </p>
+          </span>
         </div>
-        <p className={styles.special}>{person.clinicSpecialName}</p>
-        <p className={styles.client}> {person.happyPatient}بیمار راضی </p>
+        <div className={styles.special}>{person.clinicSpecialName}</div>
+        <div className={styles.client}> {person.happyPatient}بیمار راضی </div>
         <div className={styles.fields}>
           {person.fields.map((field: string) => (
             <button>{field}</button>
@@ -22,10 +22,10 @@ function Card({ person }) {
       </div>
 
       <hr />
-      <p className={styles.address}>
+      <div className={styles.address}>
         <img alt="" src="/images/icons/balck-location.png"></img>
         {person.address}
-      </p>
+      </div>
     </div>
   );
 }

@@ -2,7 +2,7 @@
   display: grid;
   gap: 5.6rem;
   margin-block-end: 14.4rem;
-
+  padding-inline: 12rem;
   .container {
     display: flex;
     gap: 2.1rem;

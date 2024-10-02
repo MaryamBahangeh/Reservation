@@ -3,6 +3,7 @@ import styles from "./Feedback.module.css";
 import Indicator from "../../components/Indicator/Indicator.tsx";
 import feedbacks from "../../assets/data/feedback.json";
 import FeedbackCard from "./FeedbackCard/FeedbackCard.tsx";
+import Message from "../../components/Message/Message.tsx";
 function Feedback(props) {
   return (
     <div className={styles.feedback}>
@@ -12,6 +13,9 @@ function Feedback(props) {
         ))}
       </div>
       <Indicator />
+      <div className={styles["message-div"]}>
+        <Message />
+      </div>
     </div>
   );
 }

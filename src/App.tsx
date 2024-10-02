@@ -48,7 +48,7 @@ function App() {
       <ButtomBanner />
       <Feedback />
       <Footer />
-      <Message />
+      {/*<Message />*/}
     </>
   );
 }

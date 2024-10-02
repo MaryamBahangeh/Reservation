@@ -1,7 +1,7 @@
 .message {
   img {
-    inset-block-end: 90rem;
-    inset-inline-end: 5rem;
-    position: absolute;
+    /*inset-block-end: 95rem;*/
+    /*position: absolute;*/
+    /*inset-inline-end: calc((max(100% - var(--max-width), 5rem) / 2) + 5rem);*/
   }
 }

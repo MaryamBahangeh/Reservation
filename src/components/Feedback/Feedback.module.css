@@ -10,3 +10,8 @@
   display: flex;
   gap: 2.4rem;
 }
+.message-div {
+  inset-block-end: -8rem;
+  inset-inline-end: 5rem;
+  position: absolute;
+}

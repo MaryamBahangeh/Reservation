@@ -82,8 +82,8 @@ function Content(props) {
         </div>
       </nav>
       <div className={styles["news-letter"]}>
-        <p>خبرنامه</p>
-        <p>برای اینکه از جدیدترین اخبار نوبیتو جا نمونید...</p>
+        <h4>خبرنامه</h4>
+        <div>برای اینکه از جدیدترین اخبار نوبیتو جا نمونید...</div>
         <div className={styles["div-email"]}>
           <input
             type="email"
@@ -95,7 +95,7 @@ function Content(props) {
             <HiOutlineArrowCircleLeft className={styles.arrow} />
           </button>
         </div>
-        <p>تلاش ما ارائه بهترین خدمات ممکن به شما همراهان نوبیتو است.</p>
+        <div>تلاش ما ارائه بهترین خدمات ممکن به شما همراهان نوبیتو است.</div>
       </div>
     </div>
   );

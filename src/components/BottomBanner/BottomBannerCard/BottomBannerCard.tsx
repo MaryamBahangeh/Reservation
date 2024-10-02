@@ -9,7 +9,7 @@ function BottomBannerCard({ title, subtitle, img }: props) {
   return (
     <div className={styles["bottom-banner-card"]}>
       <img src={img} />
-      <p className={styles.title}>{title}</p>
+      <h4 className={styles.title}>{title}</h4>
       <p className={styles.subtitle}>{subtitle}</p>
     </div>
   );

@@ -1,7 +1,7 @@
 .consults {
   display: grid;
   gap: 5.6rem;
-
+  padding-inline: 12rem;
   .container {
     display: flex;
     gap: 2.4rem;

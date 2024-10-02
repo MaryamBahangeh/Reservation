@@ -1,4 +1,5 @@
 .navbar {
   background-color: hsl(0, 0%, 100%);
   padding-block: 2.4rem 1.6rem;
+  padding-inline: 12rem;
 }

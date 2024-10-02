@@ -1,8 +1,13 @@
 .banner {
   /*display: grid;*/
-  /*grid-template-columns: repeat(auto-fill, minmax(54rem, 60rem));*/
-  display: flex;
-  gap: 2.4rem;
-  padding-block: 14.4rem;
-  overflow: hidden;
+  /*grid-template-columns: 1fr 1fr;*/
+
+  margin-block: 14.4rem;
+  padding-inline: 12rem;
+
+  .cards {
+    display: flex;
+    gap: 2.4rem;
+    overflow: hidden;
+  }
 }

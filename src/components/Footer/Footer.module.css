@@ -14,7 +14,7 @@
   .social > div {
     display: flex;
   }
-  .social p {
+  .social span {
     padding-inline-start: 0.8rem;
     flex-shrink: 0;
   }

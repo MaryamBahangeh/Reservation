@@ -15,6 +15,7 @@
     display: flex;
     position: absolute;
     z-index: 10;
+    height: 100%;
   }
 
   p > span {
@@ -35,7 +36,7 @@
     text-align: center;
     justify-content: center;
     display: flex;
-    max-width: 48%;
+    max-inline-size: 55%;
 
     P {
       font-size: 4.5rem;

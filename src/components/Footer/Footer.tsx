@@ -14,7 +14,7 @@ function Footer(props) {
       <div className={styles.social}>
         <div>
           <img className={styles.icons} src="/images/icons/copy.png" />
-          <p>تمامی حقوق این وبسایت متعلق به شرکت نوبیتو است</p>
+          <span>تمامی حقوق این وبسایت متعلق به شرکت نوبیتو است</span>
         </div>
         <div className={styles["social-icons"]}>
           <FaLinkedin className={styles.icons} />

@@ -7,12 +7,12 @@ function Consult({ person }) {
       <img src={person.image} className={styles.consultpic} />
       <div className={styles.info}>
         <div className={styles.name}>
-          <p className={styles["doctor-name"]}>{person.name}</p>
-          <p className={styles.star}>
+          <div className={styles["doctor-name"]}>{person.name}</div>
+          <span className={styles.star}>
             {person.star} <img alt="" src="/images/icons/star.png"></img>
-          </p>
+          </span>
         </div>
-        <p className={styles.special}>{person.specialName}</p>
+        <div className={styles.special}>{person.specialName}</div>
 
         <div className={styles.fields}>
           {person.fields.map((field) => (
