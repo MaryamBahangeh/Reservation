@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./Footer.module.css";
-import AboutUs from "./AboutUs/AboutUs.tsx";
-import Content from "./Content/Content.tsx";
-import Contact from "./Contact/Contact.tsx";
+import AboutUs from "./components/AboutUs/AboutUs.tsx";
+import Content from "./components/Content/Content.tsx";
+import Contact from "./components/Contact/Contact.tsx";
 import { FaInstagram, FaLinkedin, FaTelegram, FaYoutube } from "react-icons/fa";
 
 function Footer(props) {

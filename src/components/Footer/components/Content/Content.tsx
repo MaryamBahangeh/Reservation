@@ -88,7 +88,8 @@ function Content(props) {
           <input
             type="email"
             className={styles["email-box"]}
-            placeholder="ایمیل خود را اینجا وارد کنید"
+            placeh
+            older="ایمیل خود را اینجا وارد کنید"
           />
           <button className={styles.btn}>
             ارسال

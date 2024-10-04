@@ -11,7 +11,7 @@ import doctors from "./assets/data/doctors.json";
 import clinics from "./assets/data/clinics.json";
 import consultants from "./assets/data/consultants.json";
 import Footer from "./components/Footer/Footer.tsx";
-import Message from "./components/Message/Message.tsx";
+
 import "./App.css";
 
 function App() {
@@ -48,7 +48,6 @@ function App() {
       <ButtomBanner />
       <Feedback />
       <Footer />
-      {/*<Message />*/}
     </>
   );
 }

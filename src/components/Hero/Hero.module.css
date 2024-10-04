@@ -1,4 +1,4 @@
-.header {
+.hero {
   position: relative;
   background-image: repeating-linear-gradient(
     hsl(173, 57%, 28%) 0%,
@@ -6,29 +6,16 @@
   );
 
   padding-block-start: 5rem;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  justify-items: center;
   justify-content: center;
   align-items: center;
 
   .background {
     display: flex;
     position: absolute;
-    z-index: 10;
-    height: 100%;
-  }
-
-  p > span {
-    font-weight: bold;
-    color: hsl(173, 57%, 28%);
-  }
-
-  hr {
-    color: gray;
-    border-width: 0.1rem;
-    margin: 1.6rem;
-    align-self: flex-start;
-    width: 100%;
+    z-index: 1;
+    block-size: 100%;
   }
 
   .title {
@@ -38,10 +25,10 @@
     display: flex;
     max-inline-size: 55%;
 
-    P {
+    div {
       font-size: 4.5rem;
       font-weight: bold;
-      color: white;
+      color: hsl(0, 0%, 98%);
       align-self: center;
     }
 
@@ -55,7 +42,7 @@
 
   .subtitle {
     font-size: 2rem;
-    color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 95%);
     padding-block-end: 2.5rem;
   }
 
@@ -63,23 +50,19 @@
     display: flex;
     border-radius: 1rem;
     background-color: hsl(0, 0%, 100%);
-    width: 50%;
+
+    min-inline-size: 55%;
     position: relative;
     inset-block-end: -4rem;
 
     input {
-      background-color: transparent;
-      outline: none;
-      height: 3rem;
       font-size: 2rem;
       border: 0;
-      width: 100%;
-      margin-block-start: 2.5rem;
+      outline: none;
+      flex: 1 1 0;
     }
   }
   .search-icon {
-    width: 3.2rem;
-    height: 3.2rem;
     margin-block: 2.4rem;
     margin-inline: 2.4rem 0.8rem;
   }
@@ -89,6 +72,7 @@
     border-color: hsl(174, 57%, 26%);
     border-width: 0.1rem;
     border-radius: 0.7rem;
+    font-size: 1.6rem;
     margin-block: 2rem;
     margin-inline: 2rem;
     padding-block: 0.8rem;

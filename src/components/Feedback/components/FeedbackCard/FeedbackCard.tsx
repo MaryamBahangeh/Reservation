@@ -1,7 +1,16 @@
 import React from "react";
 import styles from "./FeedbackCard.module.css";
 
-function FeedbackCard({ info }: object) {
+type FeedbackCardProps = {
+  id: string;
+  name: string;
+  star: string;
+  date: string;
+  desc: string;
+  image: string;
+  suggestion: string;
+};
+function FeedbackCard({ info }: FeedbackCardProps) {
   return (
     <div className={styles["feedback-card"]}>
       <div className={styles.info}>

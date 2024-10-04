@@ -1,7 +1,7 @@
 // import React from "react";
 import styles from "./BottomBanner.module.css";
 
-import BottomBannerCard from "./BottomBannerCard/BottomBannerCard.tsx";
+import BottomBannerCard from "./components/BottomBannerCard/BottomBannerCard.tsx";
 function BottomBanner() {
   return (
     <div className={styles["bottom-banner"]}>
@@ -21,7 +21,12 @@ function BottomBanner() {
             </p>
             <button>مطالعه بیشتر</button>
           </div>
-          <img src="/images/insurance/insurance.png" className={styles.pic} />
+
+          <img
+            className={styles["div-img"]}
+            alt=""
+            src="/images/insurance/insurance.png"
+          />
         </div>
         <div className={styles.option}>
           <BottomBannerCard

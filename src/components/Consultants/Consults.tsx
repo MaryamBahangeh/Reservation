@@ -1,10 +1,10 @@
-import Consult from "./Consult/Consult.tsx";
+import Consult, { Person } from "./components/Consult/Consult.tsx";
 import Title, { titleProps } from "../Title/Title.tsx";
 import Indicator from "../../components/Indicator/Indicator.tsx";
 import styles from "./Consults.module.css";
 type props = {
   title: titleProps;
-  persons: object[];
+  persons: Person[];
 };
 function Consults({ title, persons }: props) {
   return (

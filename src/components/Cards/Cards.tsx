@@ -1,10 +1,11 @@
 import styles from "./Cards.module.css";
-import Card from "./Card/Card.tsx";
+import Card, { Person } from "./components/Card/Card.tsx";
 import Title, { titleProps } from "../Title/Title.tsx";
 import Indicator from "../../components/Indicator/Indicator.tsx";
+
 type props = {
   title: titleProps;
-  persons: object[];
+  persons: Person[];
 };
 
 function Cards({ title, persons }: props) {

@@ -16,34 +16,41 @@
   padding-inline: 4.7rem;
 
   .container {
-    display: flex;
-    gap: 4.8rem;
-  }
-
-  .info-div {
     display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 4.8rem;
 
-    button {
-      justify-self: end;
-      border-radius: 0.8rem;
-      padding-inline: 1.6rem;
-      padding-block: 0.8rem;
-      font-size: 1.6rem;
-      text-align: center;
-      color: hsl(0, 0%, 46%);
-      background-color: hsl(0, 0%, 100%);
-      border: 0.1rem solid hsl(0, 0%, 46%);
+    div-img {
+      align-self: end;
     }
 
-    .title {
-      font-size: 3.2rem;
-      font-weight: bold;
-      color: hsl(0, 0%, 23%);
-      padding-block-end: 3.2rem;
-    }
+    .info-div {
+      display: grid;
+      gap: 3.2rem;
+      flex: 1 1 0;
 
-    .subtitle {
-      padding-block-end: 4rem;
+      button {
+        justify-self: end;
+        border-radius: 0.8rem;
+        padding-inline: 1.6rem;
+        padding-block: 0.8rem;
+        font-size: 1.6rem;
+        text-align: center;
+        color: hsl(0, 0%, 46%);
+        background-color: hsl(0, 0%, 100%);
+        border: 0.1rem solid hsl(0, 0%, 46%);
+      }
+
+      .title {
+        font-size: 3.2rem;
+        font-weight: bold;
+        color: hsl(0, 0%, 23%);
+      }
+
+      .subtitle {
+        padding-block-end: 0.8rem;
+        line-height: 1.55;
+      }
     }
   }
   .option {

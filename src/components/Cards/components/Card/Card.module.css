@@ -1,16 +1,16 @@
 .card {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 1.6rem;
-  flex-direction: column;
   border-radius: 1.6rem;
   flex-basis: 28.2rem;
   flex-shrink: 0;
   flex-grow: 1;
-  padding-block: 1.5rem;
-  padding-inline: 1.5rem;
+  padding-block: 1.6rem;
+  padding-inline: 1.6rem;
   border: 0.1rem solid hsl(0, 4%, 70%);
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 99%);
 
   .doctorimg {
     border-radius: 1.2rem;
@@ -18,11 +18,12 @@
 
   .info {
     display: grid;
+    gap: 1.2rem;
 
     .name {
       display: flex;
       justify-content: space-between;
-      padding-block-end: 1.2rem;
+
       .star {
         display: flex;
         gap: 0.8rem;
@@ -37,13 +38,13 @@
 
     .special {
       font-size: 1.4rem;
-      padding-block-end: 2.4rem;
+      padding-block-end: 1.2rem;
     }
 
     .client {
       color: hsl(173, 57%, 28%);
       font-size: 1.4rem;
-      padding-block-end: 2.4rem;
+      padding-block-end: 1.2rem;
     }
 
     .fields {
@@ -63,6 +64,10 @@
     }
   }
 
+  hr {
+    inline-size: 100%;
+  }
+
   .address {
     align-self: flex-start;
     font-size: 1.4rem;
@@ -70,12 +75,5 @@
     gap: 0.8rem;
     align-items: center;
     justify-content: center;
-  }
-
-  hr {
-    color: gray;
-    border-width: 0.1rem;
-    width: 100%;
-    align-self: center;
   }
 }

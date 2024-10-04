@@ -28,10 +28,7 @@ body {
   color: hsl(0, 0%, 46%);
   margin: 0;
   background-color: hsl(0, 0%, 96%);
-  --max-width: 144rem;
-  max-inline-size: var(--max-width);
+  --full-width: 144rem;
+  max-inline-size: var(--full-width);
   margin-inline: auto;
-}
-
-#root > * {
 }

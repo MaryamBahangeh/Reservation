@@ -21,7 +21,4 @@
     display: flex;
     gap: 2.4rem;
   }
-  .certificate img {
-    height: 8rem;
-  }
 }

@@ -9,11 +9,13 @@
   gap: 2.4rem;
   margin-block-start: 24rem;
 
-  p {
+  .title {
     font-size: 3.2rem;
     font-weight: bold;
     color: hsl(36, 100%, 87%);
     margin-inline-end: 2.4rem;
+    max-inline-size: 20rem;
+    line-height: 1.55;
   }
 
   .imagediv {
@@ -23,7 +25,6 @@
   }
 
   .imagediv img {
-    width: 30.3rem;
     display: block;
   }
 }

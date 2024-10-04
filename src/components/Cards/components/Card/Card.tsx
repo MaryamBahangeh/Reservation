@@ -1,10 +1,21 @@
 import styles from "./Card.module.css";
 import React from "react";
-function Card({ person }) {
+
+export type Person = {
+  id: string;
+  name: string;
+  star: string;
+  clinicSpecialName: string;
+  happyPatient: string;
+  address: string;
+  fields: string[];
+  image: string;
+};
+
+function Card({ person }: Person) {
   return (
     <div className={styles.card}>
       <img src={person.image} />
-
       <div className={styles.info}>
         <div className={styles.name}>
           <div className={styles["doctor-name"]}>{person.name}</div>
@@ -20,7 +31,6 @@ function Card({ person }) {
           ))}
         </div>
       </div>
-
       <hr />
       <div className={styles.address}>
         <img alt="" src="/images/icons/balck-location.png"></img>

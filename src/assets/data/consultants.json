@@ -5,7 +5,7 @@
     "star": "4.5",
     "specialName": "متخصص نوزادان",
     "fields": ["جراحی", "رشد قد", "رفلاگس"],
-    "image": "images/consultants/pic1.png"
+    "image": "images/consultants/consult-pic1.png"
   },
   {
     "id": "2",
@@ -13,7 +13,7 @@
     "star": "3.5",
     "specialName": "متخصص جراحی",
     "fields": ["سنگ کلیه", "معده", "اعصاب"],
-    "image": "images/consultants/pic2.png"
+    "image": "images/consultants/consult-pic2.png"
   },
   {
     "id": "3",
@@ -21,7 +21,7 @@
     "star": "3.9",
     "specialName": "دندانپزشک",
     "fields": ["حلق و گوش", "شنوایی", "بینی"],
-    "image": "images/consultants/pic3.png"
+    "image": "images/consultants/consult-pic3.png"
   },
   {
     "id": "4",
@@ -29,7 +29,7 @@
     "star": "2.5",
     "specialName": "متخصص قلب",
     "fields": ["جراحی", "پیوند"],
-    "image": "images/consultants/pic4.png"
+    "image": "images/consultants/consult-pic4.png"
   },
   {
     "id": "1",
@@ -37,7 +37,7 @@
     "star": "4.5",
     "specialName": "متخصص نوزادان",
     "fields": ["جراحی", "رشد قد", "رفلاگس"],
-    "image": "images/consultants/pic1.png"
+    "image": "images/consultants/consult-pic1.png"
   },
   {
     "id": "2",
@@ -45,6 +45,6 @@
     "star": "3.5",
     "specialName": "متخصص جراحی",
     "fields": ["سنگ کلیه", "معده", "اعصاب"],
-    "image": "images/consultants/pic2.png"
+    "image": "images/consultants/consult-pic2.png"
   }
 ]

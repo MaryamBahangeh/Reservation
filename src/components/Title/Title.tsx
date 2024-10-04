@@ -8,15 +8,15 @@ export type titleProps = {
 function Title({ prefix, main, suffix }: titleProps) {
   return (
     <div className={styles.favorite}>
-      <p className={styles["title-text"]}>
+      <div className={styles["title-text"]}>
         {prefix}
         <span>{main}</span>
         {suffix}
-      </p>
+      </div>
       <hr className={styles.hr} />
-      <p className={styles["subtitle-text"]}>
+      <div className={styles["subtitle-text"]}>
         مشاهده همه <img alt="" src="/images/icons/arrow-left-grey.png"></img>
-      </p>
+      </div>
     </div>
   );
 }

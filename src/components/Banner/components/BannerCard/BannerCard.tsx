@@ -17,11 +17,12 @@ function BannerCard({ isPrimary, title, description, btnText, img }: props) {
         <p className={styles.subtitle}>{description}</p>
         <button>
           {btnText}
-          <img src="/images/icons/arrow-left-black.png" />
+          <img alt="" src="/images/icons/arrow-left-black.png" />
         </button>
       </div>
-      <img src={img} className={styles.pic} />
+      <img alt="" src={img} className={styles.pic} />
     </div>
   );
 }
+
 export default BannerCard;

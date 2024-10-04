@@ -13,11 +13,11 @@
     padding-block: 1.6rem;
   }
   .fimage {
-    width: 88%;
+    inline-size: 88%;
   }
   .limage {
     align-self: flex-end;
-    width: 88%;
+    inline-size: 88%;
   }
   .title {
     text-align: center;

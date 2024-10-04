@@ -4,19 +4,11 @@ function MainNav() {
   return (
     <div className={styles["main-nav"]}>
       <div className={styles.menu}>
-        <div className={styles["main-logo"]}>
-          <img src="/images/logo/logo.png" alt="" className={styles.logo}></img>
-          <img
-            src="/images/logo/logoNobito.png"
-            alt=""
-            className={styles.nobito}
-          ></img>
-          <img
-            src="/images/logo/logoPlatform.png"
-            alt=""
-            className={styles.platform}
-          ></img>
-        </div>
+        <img
+          src="/images/logo/logo-main.png"
+          alt=""
+          className={styles.logo}
+        ></img>
         <nav>
           <ul>
             <li>

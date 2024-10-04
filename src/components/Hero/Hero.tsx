@@ -2,7 +2,7 @@ import styles from "./Hero.module.css";
 
 function Hero() {
   return (
-    <div className={styles.header}>
+    <div className={styles.hero}>
       <div className={styles.background}>
         <img src="/images/hero/background2.png" />
         <img src="/images/hero/background1.png" />
@@ -13,7 +13,7 @@ function Hero() {
           className={styles["quotaion-start"]}
           src="/images/hero/quotaion-start.png"
         />
-        <p>تلاش ما دسترسی سریعتر و آسان تر شما به خدمات پزشکی است :)</p>
+        <div>تلاش ما دسترسی سریعتر و آسان تر شما به خدمات پزشکی است :)</div>
         <img
           className={styles["quotaion-end"]}
           src="/images/hero/quotaion-end.png"
@@ -21,8 +21,8 @@ function Hero() {
       </div>
 
       <div className={styles.subtitle}>
-        <p>کافیست خدمات درمانی موردنظر خود را جستجو کنید</p>
-        <p>(دریافت نوبت،مشاوره پزشکی،خدمات پزشکی در منزل)</p>
+        <div>کافیست خدمات درمانی موردنظر خود را جستجو کنید</div>
+        <div>(دریافت نوبت،مشاوره پزشکی،خدمات پزشکی در منزل)</div>
       </div>
       <div className={styles.search}>
         <img
