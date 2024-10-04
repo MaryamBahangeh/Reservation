@@ -6,17 +6,17 @@ function Contact(props) {
       <div className={styles.communication}>
         <div>
           <img src="/images/communications/call.png" />
-          <p>تماس با پشتیبانی : ۱۲۳۴۵۶۷۸-۰۲۱ | ۱۲۳۴۵۶۷۸-۰۲۱</p>
+          <div>تماس با پشتیبانی : ۱۲۳۴۵۶۷۸-۰۲۱ | ۱۲۳۴۵۶۷۸-۰۲۱</div>
         </div>
         <div>
           <img src="/images/communications/sms.png" />
-          <p>نشانی پست الکترونیک : smartix@yahoo.com</p>
+          <div>نشانی پست الکترونیک : smartix@yahoo.com</div>
         </div>
         <div>
           <img src="/images/communications/building.png" />
-          <p>
+          <div className={styles.adres}>
             نشانی : تهران _ میدان آرژانتین _ خیابان لاله _ کوچه صاد _ پلاک 18
-          </p>
+          </div>
         </div>
       </div>
       <div className={styles.certificate}>

@@ -4,10 +4,11 @@ import styles from "./AboutUs.module.css";
 function AboutUs(props) {
   return (
     <div className={styles.about}>
-      <div className={styles.logo}>
-        <img src="/images/logo/logo-nobito-footer.png" alt=""></img>
-      </div>
-
+      <img
+        className={styles.logo}
+        src="/images/logo/logo-nobito-footer.png"
+        alt=""
+      ></img>
       <div>
         <h1 className={styles.title}>
           تلاش ما دسترسی آسان تر شما به خدمات پزشکی است

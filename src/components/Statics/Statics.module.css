@@ -3,14 +3,19 @@
   flex-direction: column;
   margin-block: 14.4rem;
   justify-content: center;
+  gap: 1.6rem;
 
   .info {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    gap: 14rem;
-    padding-block: 1.6rem;
+    gap: 14.1rem;
+
+    > div {
+      display: grid;
+      gap: 1.6rem;
+    }
   }
   .fimage {
     inline-size: 88%;
@@ -23,7 +28,6 @@
     text-align: center;
     font-size: 3.2rem;
     font-weight: bold;
-    padding-block-end: 1.6rem;
   }
   .subtitle {
     text-align: center;

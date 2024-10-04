@@ -17,7 +17,7 @@ function Statics() {
         </div>
         <div>
           <div className={styles.title}>{(40000).toLocaleString()}+</div>
-          <p className={styles.subtitle}>نوبت دهی روزانه</p>
+          <div className={styles.subtitle}>نوبت دهی روزانه</div>
         </div>
         <div>
           <div className={styles.title}>{(15000).toLocaleString()}+</div>

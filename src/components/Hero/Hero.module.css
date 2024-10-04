@@ -25,7 +25,7 @@
     display: flex;
     max-inline-size: 55%;
 
-    div {
+    > div {
       font-size: 4.5rem;
       font-weight: bold;
       color: hsl(0, 0%, 98%);
