@@ -1,0 +1,11 @@
+.fade-feedback-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.1rem solid hsl(0, 0%, 80%);
+  border-radius: 0.8rem;
+  background-color: hsl(0, 0%, 100%);
+  padding-inline: 6rem;
+  padding-block: 3rem;
+  flex-shrink: 0;
+}

@@ -69,8 +69,7 @@
 
   button {
     color: hsl(174, 57%, 26%);
-    border-color: hsl(174, 57%, 26%);
-    border-width: 0.1rem;
+    border: 0.1rem solid hsl(174, 57%, 26%);
     border-radius: 0.7rem;
     font-size: 1.6rem;
     margin-block: 2rem;

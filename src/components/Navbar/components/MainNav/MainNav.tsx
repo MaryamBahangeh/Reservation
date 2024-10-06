@@ -26,7 +26,9 @@ function MainNav() {
               <a href="#">مجله سلامت</a>
             </li>
             <li>
-              <a href="#">نیکوکاری </a>
+              <a className={styles["red-botton"]} href="#">
+                <img src="./images/icons/red-botton.png" /> نیکوکاری
+              </a>
             </li>
           </ul>
         </nav>
