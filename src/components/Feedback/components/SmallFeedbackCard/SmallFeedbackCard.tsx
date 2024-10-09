@@ -1,25 +1,28 @@
-import React from "react";
 import styles from "./SmallFeedbackCard.module.css";
 import { FeedbackCardProps } from "../FeedbackCard/FeedbackCard.tsx";
 
-function SmallFeedbackCard({ info }: FeedbackCardProps) {
+function SmallFeedbackCard({
+  feedbackCardProps,
+}: {
+  feedbackCardProps: FeedbackCardProps;
+}) {
   return (
     <div className={styles["small-feedback-card"]}>
       <div className={styles.info}>
         <div className={styles.person}>
-          <img className={styles.img} src={info.image} />
-          <div className={styles.name}>{info.name}</div>
-          <div className={styles.date}> تاریخ: {info.date}</div>
+          <img className={styles.img} src={feedbackCardProps.image} />
+          <div className={styles.name}>{feedbackCardProps.name}</div>
+          <div className={styles.date}> تاریخ: {feedbackCardProps.date}</div>
         </div>
         <span className={styles.rate}>
-          {info.star} <img src="/images/icons/star.png" />
+          {feedbackCardProps.star} <img src="/images/icons/star.png" />
         </span>
       </div>
 
-      <p>{info.desc}</p>
+      <p>{feedbackCardProps.desc}</p>
       <button>
         <img src="/images/icons/like-small.png" />
-        {info.suggestion}
+        {feedbackCardProps.suggestion}
       </button>
     </div>
   );

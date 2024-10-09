@@ -4,11 +4,12 @@
   justify-content: space-between;
   align-items: center;
   gap: 1.2rem;
+  padding-inline: 12rem;
 
   .title-text {
-    font-size: 2rem;
+    font-size: 3.2rem;
     flex-shrink: 0;
-
+    font-weight: 500;
     span {
       font-weight: bold;
       color: hsl(173, 57%, 28%);

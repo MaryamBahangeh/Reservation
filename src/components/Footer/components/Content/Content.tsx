@@ -1,7 +1,6 @@
-import React from "react";
 import styles from "./Content.module.css";
 import { HiOutlineArrowCircleLeft } from "react-icons/hi";
-function Content(props) {
+function Content() {
   return (
     <div className={styles.content}>
       <nav className={styles["menu-content"]}>
@@ -88,8 +87,7 @@ function Content(props) {
           <input
             type="email"
             className={styles["email-box"]}
-            placeh
-            older="ایمیل خود را اینجا وارد کنید"
+            placeholder="ایمیل خود را اینجا وارد کنید"
           />
           <button className={styles.btn}>
             ارسال

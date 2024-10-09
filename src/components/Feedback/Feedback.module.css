@@ -4,7 +4,6 @@
   align-items: center;
   gap: 5.6rem;
   margin-block-end: 14.4rem;
-  position: relative;
 
   .title-container {
     display: grid;
@@ -14,8 +13,8 @@
     padding-inline: 12rem;
     overflow: hidden;
 
-    > div {
-      font-weight: bold;
+    > h2 {
+      font-weight: 700;
       font-size: 2.4rem;
       > span {
         color: hsl(173, 57%, 28%);
@@ -24,7 +23,6 @@
   }
   .container {
     display: flex;
-    /*grid-template-columns: 1fr 2fr 3fr 2fr 1fr;*/
     align-items: center;
     overflow: hidden;
     gap: 2.4rem;

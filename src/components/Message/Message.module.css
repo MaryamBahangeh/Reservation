@@ -1,7 +1,7 @@
 .message {
   img {
-    /*inset-block-end: 95rem;*/
-    /*position: absolute;*/
-    /*inset-inline-end: calc((max(100% - var(--full-width), 5rem) / 2) + 5rem);*/
+    inset-block-end: 2rem;
+    position: fixed;
+    inset-inline-end: calc((max(100% - var(--full-width), 5rem) / 2) + 5rem);
   }
 }

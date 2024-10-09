@@ -79,3 +79,12 @@
     }
   }
 }
+
+@media (max-width: 120rem) {
+  .content {
+    flex-direction: column;
+    .news-letter {
+      align-self: flex-start;
+    }
+  }
+}

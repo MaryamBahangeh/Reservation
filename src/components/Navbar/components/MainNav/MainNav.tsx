@@ -9,7 +9,7 @@ function MainNav() {
           alt=""
           className={styles.logo}
         ></img>
-        <nav>
+        <nav aria-label="primary-navigation">
           <ul>
             <li>
               <a href="#">نوبت دهی مطب</a>

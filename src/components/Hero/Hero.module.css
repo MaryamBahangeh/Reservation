@@ -4,7 +4,7 @@
     hsl(173, 57%, 28%) 0%,
     hsl(173, 100%, 18%) 100%
   );
-
+  isolation: isolate;
   padding-block-start: 5rem;
   display: grid;
   justify-items: center;
@@ -14,7 +14,7 @@
   .background {
     display: flex;
     position: absolute;
-    z-index: 1;
+    z-index: -1;
     block-size: 100%;
   }
 
@@ -70,6 +70,7 @@
   button {
     color: hsl(174, 57%, 26%);
     border: 0.1rem solid hsl(174, 57%, 26%);
+    background-color: transparent;
     border-radius: 0.7rem;
     font-size: 1.6rem;
     margin-block: 2rem;
