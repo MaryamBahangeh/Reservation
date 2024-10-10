@@ -1,5 +1,4 @@
 import styles from "./MainNav.module.css";
-
 function MainNav() {
   return (
     <div className={styles["main-nav"]}>
@@ -33,7 +32,7 @@ function MainNav() {
           </ul>
         </nav>
       </div>
-      <div className={styles["main-nav-button"]}>
+      <div className={styles["main-nav-Button"]}>
         <img src="/images/icons/bell.png" />
         <button className={styles.loginbtn}>ورود/ ثبت نام</button>
       </div>
