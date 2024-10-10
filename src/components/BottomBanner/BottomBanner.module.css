@@ -16,14 +16,21 @@
   padding-inline: 4.7rem;
 
   .container {
-    display: grid;
-    grid-template-columns: auto 1fr;
+    display: flex;
     gap: 4.8rem;
 
+    .insurance-image {
+      flex-shrink: 0;
+      align-self: end;
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
     .info-div {
       display: grid;
       gap: 3.2rem;
-      flex: 1 1 0;
 
       button {
         justify-self: end;
@@ -53,5 +60,20 @@
     display: flex;
     gap: 7.6rem;
     padding-inline-start: 1.9rem;
+  }
+}
+
+@media (max-width: 120rem) {
+  .main-div {
+    .container {
+      flex-direction: column;
+
+      .info-div {
+        order: 1;
+      }
+      .insurance-image {
+        align-self: auto;
+      }
+    }
   }
 }

@@ -1,11 +1,15 @@
-import React from "react";
 import styles from "./Footer.module.css";
 import AboutUs from "./components/AboutUs/AboutUs.tsx";
 import Content from "./components/Content/Content.tsx";
 import Contact from "./components/Contact/Contact.tsx";
-import { FaInstagram, FaLinkedin, FaTelegram, FaYoutube } from "react-icons/fa";
+import {
+  FaInstagramSquare,
+  FaLinkedin,
+  FaTelegram,
+  FaYoutube,
+} from "react-icons/fa";
 
-function Footer(props) {
+function Footer() {
   return (
     <div className={styles.footer}>
       <AboutUs />
@@ -18,7 +22,7 @@ function Footer(props) {
         </div>
         <div className={styles["social-icons"]}>
           <FaLinkedin className={styles.icons} />
-          <FaInstagram className={styles.icons} />
+          <FaInstagramSquare className={styles.icons} />
           <FaTelegram className={styles.icons} />
           <FaYoutube className={styles.icons} />
         </div>

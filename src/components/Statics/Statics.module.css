@@ -1,8 +1,6 @@
 .statics {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   margin-block: 14.4rem;
-  justify-content: center;
   gap: 1.6rem;
 
   .info {
@@ -21,7 +19,7 @@
     inline-size: 88%;
   }
   .limage {
-    align-self: flex-end;
+    justify-self: end;
     inline-size: 88%;
   }
   .title {

@@ -1,6 +1,4 @@
 import styles from "./MainNav.module.css";
-import Button, { Color, Size, Variant } from "../../../Button/Button.tsx";
-
 function MainNav() {
   return (
     <div className={styles["main-nav"]}>
@@ -10,7 +8,7 @@ function MainNav() {
           alt=""
           className={styles.logo}
         ></img>
-        <nav>
+        <nav aria-label="primary-navigation">
           <ul>
             <li>
               <a href="#">نوبت دهی مطب</a>
@@ -34,12 +32,9 @@ function MainNav() {
           </ul>
         </nav>
       </div>
-      <div className={styles["main-nav-button"]}>
+      <div className={styles["main-nav-Button"]}>
         <img src="/images/icons/bell.png" />
-        {/*<button className={styles.loginbtn}>ورود/ ثبت نام</button>*/}
-        <Button variant={Variant.FILL} color={Color.PRIMARY} size={Size.MEDIUM}>
-          ورود/ ثبت نام
-        </Button>
+        <button className={styles.loginbtn}>ورود/ ثبت نام</button>
       </div>
     </div>
   );

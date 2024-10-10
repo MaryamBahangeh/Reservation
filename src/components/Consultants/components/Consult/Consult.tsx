@@ -1,5 +1,4 @@
 import styles from "./Consult.module.css";
-import React from "react";
 
 export type Person = {
   id: string;
@@ -9,7 +8,7 @@ export type Person = {
   fields: string[];
   image: string;
 };
-function Consult({ person }: Person) {
+function Consult({ person }: { person: Person }) {
   return (
     <div className={styles.consult}>
       <img src={person.image} className={styles.consultpic} />

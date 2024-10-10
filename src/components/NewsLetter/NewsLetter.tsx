@@ -1,7 +1,6 @@
-import React from "react";
 import styles from "./NewsLetter.module.css";
 
-function NewsLetter(props) {
+function NewsLetter() {
   return (
     <div className={styles["newsletter-main"]}>
       <div className={styles["news-letter"]}>

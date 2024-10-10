@@ -8,17 +8,18 @@ function InfoNav() {
         <img src="/images/icons/youtube.png" />
         <img src="/images/icons/linkedin.png" />
       </div>
-      <nav>
+      <nav aria-label="secondary-navigation">
         <ul>
           <li>
-            <a href="#">سوالات متداول</a>
+            <a href="#">درباره ما</a>
           </li>
           <li>
             <a href="#">تماس با ما</a>
           </li>
           <li>
-            <a href="#">درباره ما</a>
+            <a href="#">سوالات متداول</a>
           </li>
+
           <li>
             <a className={styles.address} href="#">
               <img src="/images/icons/balck-location.png" /> + انتخاب آدرس

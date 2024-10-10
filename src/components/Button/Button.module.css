@@ -1,40 +1,67 @@
 .button {
+  padding-inline: 1.6rem;
+  padding-block: 0.5rem 0.7rem;
+  border-radius: 0.5rem;
+
+  --bgcolor: hsl(173, 57%, 28%);
+  --font-color: hsl(0, 0%, 98%);
+
   &.fill {
+    background-color: var(--bgcolor);
+    color: var(--font-color);
+    border: none;
   }
 
   &.outline {
+    background-color: transparent;
+    color: var(--bgcolor);
+    border: 0.1rem solid var(--bgcolor);
   }
 
   &.text {
+    background-color: transparent;
+    color: var(--bgcolor);
+    border: none;
   }
 
   &.primary {
+    --bgcolor: hsl(173, 57%, 28%);
+    --font-color: hsl(0, 0%, 98%);
   }
 
   &.secondary {
+    --bgcolor: hsl(36, 100%, 63%);
+    --font-color: hsl(0, 0%, 25%);
   }
 
   &.black {
+    --bgcolor: hsl(0, 0%, 7%);
+    --font-color: hsl(0, 0%, 98%);
   }
 
   &.white {
+    --bgcolor: hsl(0, 0%, 98%);
+    --font-color: hsl(0, 0%, 7%);
   }
 
   &.small {
+    font-size: 3.2rem;
   }
 
   &.medium {
+    font-size: 4rem;
   }
 
   &.large {
+    font-size: 4.8rem;
   }
 
   &.huge {
-  }
-
-  &:hover {
+    font-size: 5.6rem;
   }
 
   &[disabled] {
+    --bgcolor: hsl(0, 0%, 75%);
+    --font-color: hsl(0, 0%, 98%);
   }
 }

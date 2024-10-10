@@ -21,7 +21,9 @@ function BottomBanner() {
             </p>
             <button>مطالعه بیشتر</button>
           </div>
-          <img alt="" src="/images/insurance/insurance.png" />
+          <div className={styles["insurance-image"]}>
+            <img alt="" src="/images/insurance/insurance.png" />
+          </div>
         </div>
         <div className={styles.option}>
           <BottomBannerCard
