@@ -1,0 +1,73 @@
+.small-feedback-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 27.3rem;
+  flex-grow: 1;
+  border: 0.1rem solid hsl(0, 0%, 80%);
+  border-radius: 1.2em;
+  padding-block: 1.2rem;
+  padding-inline: 1.2rem;
+  background-color: hsl(0, 0%, 100%);
+  gap: 1.6rem;
+  flex-shrink: 0;
+
+  .info {
+    display: flex;
+    justify-content: space-between;
+
+    .person {
+      display: grid;
+      align-items: center;
+      grid-template-areas: "img name" "img date";
+      gap: 0.8rem;
+    }
+
+    .img {
+      grid-area: img;
+    }
+
+    .name {
+      grid-area: name;
+      color: hsl(0, 0%, 23%);
+      font-weight: bold;
+      font-size: 1.2rem;
+      padding-inline-end: 0.2rem;
+    }
+
+    .date {
+      grid-area: date;
+      color: hsl(0, 0%, 61%);
+      font-size: 0.8rem;
+    }
+
+    .rate {
+      font-size: 1.4rem;
+      color: hsl(0, 0%, 25%);
+      align-self: flex-start;
+      display: flex;
+      justify-content: center;
+      gap: 0.4rem;
+    }
+  }
+
+  p {
+    color: hsl(0, 0%, 61%);
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  button {
+    margin-block-start: 0.1rem;
+
+    border: none;
+    font-size: 1rem;
+    align-self: flex-end;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    color: hsl(173, 57%, 28%);
+    background-color: hsl(0, 0%, 100%);
+  }
+}

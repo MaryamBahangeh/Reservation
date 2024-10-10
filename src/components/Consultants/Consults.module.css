@@ -1,0 +1,11 @@
+.consults {
+  display: grid;
+  gap: 5.6rem;
+  padding-inline-start: 12rem;
+
+  .container {
+    display: flex;
+    gap: 2.4rem;
+    overflow: hidden;
+  }
+}

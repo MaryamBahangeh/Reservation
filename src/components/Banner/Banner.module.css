@@ -1,0 +1,10 @@
+.banner {
+  margin-block: 14.4rem;
+  padding-inline: 12rem;
+
+  .cards {
+    display: flex;
+    gap: 2.4rem;
+    overflow: hidden;
+  }
+}

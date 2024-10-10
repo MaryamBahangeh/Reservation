@@ -1,0 +1,40 @@
+.button {
+  &.fill {
+  }
+
+  &.outline {
+  }
+
+  &.text {
+  }
+
+  &.primary {
+  }
+
+  &.secondary {
+  }
+
+  &.black {
+  }
+
+  &.white {
+  }
+
+  &.small {
+  }
+
+  &.medium {
+  }
+
+  &.large {
+  }
+
+  &.huge {
+  }
+
+  &:hover {
+  }
+
+  &[disabled] {
+  }
+}

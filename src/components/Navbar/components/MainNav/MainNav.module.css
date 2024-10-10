@@ -1,0 +1,51 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 12rem;
+  .menu {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+
+    .red-botton {
+      display: flex;
+      gap: 0.8rem;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  nav > ul {
+    display: flex;
+    list-style: none;
+    gap: 2.4rem;
+  }
+  nav > ul > li > a {
+    text-decoration: none;
+    color: hsl(0, 0%, 46%);
+  }
+  .menu-service {
+    display: flex;
+    gap: 0.8rem;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+  .loginbtn {
+    color: hsl(0, 0%, 98%);
+    text-align: center;
+    padding-inline: 1.4rem;
+    padding-block: 1.2rem;
+    background-color: hsl(173, 57%, 28%);
+    border-radius: 0.8rem;
+    border: none;
+    font-size: 1.6rem;
+  }
+}

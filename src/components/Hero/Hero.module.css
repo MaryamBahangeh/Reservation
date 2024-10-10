@@ -1,0 +1,85 @@
+.hero {
+  position: relative;
+  background-image: repeating-linear-gradient(
+    hsl(173, 57%, 28%) 0%,
+    hsl(173, 100%, 18%) 100%
+  );
+
+  padding-block-start: 5rem;
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+
+  .background {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    block-size: 100%;
+  }
+
+  .title {
+    padding-block-end: 3.2rem;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    max-inline-size: 55%;
+
+    > div {
+      font-size: 4.5rem;
+      font-weight: bold;
+      color: hsl(0, 0%, 98%);
+      align-self: center;
+    }
+
+    .quotaion-start {
+      align-self: flex-start;
+    }
+    .quotaion-end {
+      align-self: flex-end;
+    }
+  }
+
+  .subtitle {
+    font-size: 2rem;
+    color: hsl(0, 0%, 95%);
+    padding-block-end: 2.5rem;
+  }
+
+  .search {
+    display: flex;
+    border-radius: 1rem;
+    background-color: hsl(0, 0%, 100%);
+
+    min-inline-size: 55%;
+    position: relative;
+    inset-block-end: -4rem;
+
+    input {
+      font-size: 2rem;
+      border: 0;
+      outline: none;
+      flex: 1 1 0;
+    }
+  }
+  .search-icon {
+    margin-block: 2.4rem;
+    margin-inline: 2.4rem 0.8rem;
+  }
+
+  button {
+    color: hsl(174, 57%, 26%);
+    border: 0.1rem solid hsl(174, 57%, 26%);
+    border-radius: 0.7rem;
+    font-size: 1.6rem;
+    margin-block: 2rem;
+    margin-inline: 2rem;
+    padding-block: 0.8rem;
+    padding-inline: 1.6rem;
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+}

@@ -1,0 +1,29 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+
+  .communication {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    flex: 1 1 0;
+
+    > div {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      flex: 1 1 0;
+    }
+  }
+
+  .certificate {
+    display: grid;
+    grid-template-columns: min-content;
+    gap: 2.4rem;
+
+    > div {
+      display: flex;
+      gap: 2.4rem;
+    }
+  }
+}

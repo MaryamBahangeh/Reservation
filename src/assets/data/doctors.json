@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "name": "عباس میراحمدی",
+    "star": "4.5",
+    "clinicSpecialName": "متخصص قلب و عروق",
+    "happyPatient": "2374(97%)",
+    "address": "نشانی: تهران - میدان آرزانتین- خیابا...",
+    "fields": ["جراحی قلب", "تست ورزش", "آنجوگرافی"],
+    "image": "images/doctors/doctor-pic1.png"
+  },
+  {
+    "id": "2",
+    "name": "سارا احمدی",
+    "star": "3.5",
+    "clinicSpecialName": "متخصص جراحی",
+    "happyPatient": "374(57%)",
+    "address": "نشانی: مشهد - میدان آزادی- خیابا...",
+    "fields": ["سنگ کلیه", "معده", "روده", "اعصاب"],
+    "image": "images/doctors/doctor-pic2.png"
+  },
+  {
+    "id": "3",
+    "name": "عباس بدری",
+    "star": "3.9",
+    "clinicSpecialName": "متخصص گوش و بینی",
+    "happyPatient": "1374(67%)",
+    "address": "نشانی: تهران - میدان سرو- خیابا...",
+    "fields": ["حلق و گوش", "شنوایی", "بینی"],
+    "image": "images/doctors/doctor-pic3.png"
+  },
+  {
+    "id": "4",
+    "name": "سارا گودرزی",
+    "star": "2.5",
+    "clinicSpecialName": "متخصص زیبایی",
+    "happyPatient": "274(27%)",
+    "address": "نشانی: تهران - میدان زرتشت- خیابا...",
+    "fields": ["جراحی", "زیبایی"],
+    "image": "images/doctors/doctor-pic4.png"
+  },
+  {
+    "id": "1",
+    "name": "عباس میراحمدی",
+    "star": "4.5",
+    "clinicSpecialName": "متخصص قلب و عروق",
+    "happyPatient": "2374(97%)",
+    "address": "نشانی: تهران - میدان آرزانتین- خیابا...",
+    "fields": ["جراحی قلب", "تست ورزش", "آنجوگرافی"],
+    "image": "images/doctors/doctor-pic1.png"
+  },
+  {
+    "id": "2",
+    "name": "سارا احمدی",
+    "star": "3.5",
+    "clinicSpecialName": "متخصص جراحی",
+    "happyPatient": "374(57%)",
+    "address": "نشانی: مشهد - میدان آزادی- خیابا...",
+    "fields": ["سنگ کلیه", "معده", "روده", "اعصاب"],
+    "image": "images/doctors/doctor-pic2.png"
+  }
+]

@@ -1,0 +1,24 @@
+.favorite {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.2rem;
+
+  .title-text {
+    font-size: 2rem;
+    flex-shrink: 0;
+
+    span {
+      font-weight: bold;
+      color: hsl(173, 57%, 28%);
+    }
+  }
+  .subtitle-text {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+}

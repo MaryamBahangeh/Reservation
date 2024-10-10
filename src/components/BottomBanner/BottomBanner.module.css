@@ -1,0 +1,57 @@
+.bottom-banner {
+  margin-block: 14.4rem;
+  padding-inline: 12rem;
+}
+
+.main-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4.8rem;
+  background: hsl(0, 0%, 99%);
+  border-radius: 2.4rem;
+  border: none;
+  padding-block: 4.8rem 4.7rem;
+  padding-inline: 4.7rem;
+
+  .container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 4.8rem;
+
+    .info-div {
+      display: grid;
+      gap: 3.2rem;
+      flex: 1 1 0;
+
+      button {
+        justify-self: end;
+        border-radius: 0.8rem;
+        padding-inline: 1.6rem;
+        padding-block: 0.8rem;
+        font-size: 1.6rem;
+        text-align: center;
+        color: hsl(0, 0%, 46%);
+        background-color: hsl(0, 0%, 100%);
+        border: 0.1rem solid hsl(0, 0%, 46%);
+      }
+
+      .title {
+        font-size: 3.2rem;
+        font-weight: bold;
+        color: hsl(0, 0%, 23%);
+      }
+
+      .subtitle {
+        padding-block-end: 0.8rem;
+        line-height: 1.55;
+      }
+    }
+  }
+  .option {
+    display: flex;
+    gap: 7.6rem;
+    padding-inline-start: 1.9rem;
+  }
+}

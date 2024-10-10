@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 2.4rem;
+  min-inline-size: 55rem;
+
+  &.primary {
+    background-color: hsl(328, 96%, 34%);
+  }
+
+  &.secondary {
+    background-color: hsl(198, 81%, 34%);
+  }
+
+  .pic {
+    block-size: auto;
+    inline-size: 20rem;
+  }
+
+  .info-div {
+    padding-inline: 4rem 0;
+    padding-block: 3.2rem;
+    display: grid;
+    gap: 1.6rem;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+
+    button {
+      justify-self: end;
+      text-align: center;
+      color: hsl(0, 0%, 23%);
+      background-color: hsl(0, 0%, 100%);
+      border: none;
+      border-radius: 0.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.8rem;
+      padding-inline: 1.2rem;
+      padding-block: 0.8rem;
+      font-size: 1.4rem;
+    }
+
+    .title {
+      font-size: 2.2rem;
+    }
+    .subtitle {
+      font-size: 1.4rem;
+      padding-block-end: 1.6rem;
+    }
+  }
+}

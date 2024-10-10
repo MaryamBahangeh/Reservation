@@ -1,0 +1,36 @@
+.statics {
+  display: flex;
+  flex-direction: column;
+  margin-block: 14.4rem;
+  justify-content: center;
+  gap: 1.6rem;
+
+  .info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 14.1rem;
+
+    > div {
+      display: grid;
+      gap: 1.6rem;
+    }
+  }
+  .fimage {
+    inline-size: 88%;
+  }
+  .limage {
+    align-self: flex-end;
+    inline-size: 88%;
+  }
+  .title {
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: bold;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 2rem;
+  }
+}

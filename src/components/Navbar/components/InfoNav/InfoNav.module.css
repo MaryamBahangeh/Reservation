@@ -1,0 +1,25 @@
+.infoNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 12rem;
+  .social {
+    display: flex;
+    gap: 2.4rem;
+  }
+
+  nav > ul {
+    display: flex;
+    gap: 2.4rem;
+    list-style: none;
+  }
+  nav > ul > li > a {
+    text-decoration: none;
+    color: hsl(0, 0%, 46%);
+  }
+  nav .address {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+  }
+}
