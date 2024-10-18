@@ -1,22 +1,22 @@
 import styles from "./Card.module.css";
 
 export type Person = {
-  id: string;
+  ID: string;
   name: string;
   star: string;
-  clinicSpecialName: string;
-  happyPatient: number;
+  specialtyId: string;
+  happyPatients: number;
   allPatients: number;
   address: string;
-  fields: string[];
   image: string;
 };
 
 type props = {
   person: Person;
 };
+
 function Card({ person }: props) {
-  const happyPatient = `(${Math.floor((person.happyPatient / person.allPatients) * 100)}%) ${person.happyPatient.toLocaleString()} بیمار راضی`;
+  const happyPatient = `(${Math.floor((person.happyPatients / person.allPatients) * 100)}%) ${person.happyPatients.toLocaleString()} بیمار راضی`;
   return (
     <div className={styles.card}>
       <img src={person.image} />
@@ -27,14 +27,14 @@ function Card({ person }: props) {
             {person.star} <img alt="" src="/images/icons/star.png"></img>
           </span>
         </div>
-        <div className={styles.special}>{person.clinicSpecialName}</div>
+        <div className={styles.special}>{person.specialtyId}</div>
         <div className={styles.client}>{happyPatient}</div>
         <div className={styles.client}></div>
-        <div className={styles.fields}>
-          {person.fields.map((field: string) => (
-            <button>{field}</button>
-          ))}
-        </div>
+        {/*<div className={styles.fields}>*/}
+        {/*  {person.fields.map((field: string) => (*/}
+        {/*    <button>{field}</button>*/}
+        {/*  ))}*/}
+        {/*</div>*/}
       </div>
       <hr />
       <div className={styles.address}>

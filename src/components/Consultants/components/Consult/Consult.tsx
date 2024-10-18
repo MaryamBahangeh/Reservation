@@ -1,11 +1,10 @@
 import styles from "./Consult.module.css";
 
 export type Person = {
-  id: string;
+  ID: string;
   name: string;
   star: string;
-  specialName: string;
-  fields: string[];
+  specialtyid: string;
   image: string;
 };
 function Consult({ person }: { person: Person }) {
@@ -18,12 +17,12 @@ function Consult({ person }: { person: Person }) {
           <span className={styles.star}>{person.star}</span>
           <img alt="" src="/images/icons/star.png"></img>
         </div>
-        <div className={styles.special}>{person.specialName}</div>
-        <div className={styles.fields}>
-          {person.fields.map((field) => (
-            <button>{field}</button>
-          ))}
-        </div>
+        <div className={styles.special}>{person.specialtyid}</div>
+        {/*<div className={styles.fields}>*/}
+        {/*  {person.fields.map((field) => (*/}
+        {/*    <button>{field}</button>*/}
+        {/*  ))}*/}
+        {/*</div>*/}
       </div>
 
       <hr />

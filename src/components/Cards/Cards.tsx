@@ -14,7 +14,7 @@ function Cards({ title, persons }: props) {
       <Title prefix={title.prefix} main={title.main} suffix={title.suffix} />
       <div className={styles.container}>
         {persons.map((person) => (
-          <Card key={person.id} person={person} />
+          <Card key={person.ID} person={person} />
         ))}
       </div>
       <Indicator />
