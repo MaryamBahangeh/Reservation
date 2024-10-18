@@ -1,23 +1,17 @@
 import styles from "./Consult.module.css";
+import { Consultant } from "../../../../models/consultant.ts";
 
-export type Person = {
-  ID: string;
-  name: string;
-  star: string;
-  specialtyid: string;
-  image: string;
-};
-function Consult({ person }: { person: Person }) {
+function Consult({ consultant }: { consultant: Consultant }) {
   return (
     <div className={styles.consult}>
-      <img src={person.image} className={styles.consultpic} />
+      <img src={consultant.image} className={styles.consultpic} />
       <div className={styles.info}>
         <div className={styles.name}>
-          <div className={styles["doctor-name"]}>{person.name}</div>
-          <span className={styles.star}>{person.star}</span>
+          <div className={styles["doctor-name"]}>{consultant.name}</div>
+          <span className={styles.star}>{consultant.star}</span>
           <img alt="" src="/images/icons/star.png"></img>
         </div>
-        <div className={styles.special}>{person.specialtyid}</div>
+        <div className={styles.special}>{consultant.specialtyid}</div>
         {/*<div className={styles.fields}>*/}
         {/*  {person.fields.map((field) => (*/}
         {/*    <button>{field}</button>*/}

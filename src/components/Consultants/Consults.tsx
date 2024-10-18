@@ -1,12 +1,15 @@
-import Consult, { Person } from "./components/Consult/Consult.tsx";
+import Consult from "./components/Consult/Consult.tsx";
 import Title, { titleProps } from "../Title/Title.tsx";
 import Indicator from "../../components/Indicator/Indicator.tsx";
 import styles from "./Consults.module.css";
+import { Consultant } from "../../models/consultant.ts";
+
 type props = {
   title: titleProps;
-  persons: Person[];
+  consultants: Consultant[];
 };
-function Consults({ title, persons }: props) {
+
+function Consults({ title, consultants }: props) {
   return (
     <div className={styles.consults}>
       <Title
@@ -15,8 +18,8 @@ function Consults({ title, persons }: props) {
         main={title.main}
       ></Title>
       <div className={styles.container}>
-        {persons.map((person) => (
-          <Consult key={person.ID} person={person} />
+        {consultants.map((person) => (
+          <Consult key={person.ID} consultant={person} />
         ))}
       </div>
       <Indicator />

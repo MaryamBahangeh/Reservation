@@ -11,29 +11,16 @@ import Footer from "./components/Footer/Footer.tsx";
 import Message from "./components/Message/Message.tsx";
 import "./App.css";
 import { useEffect, useState } from "react";
-
-async function getDoctors() {
-  const response = await fetch("http://localhost:5000/doctors");
-  const doctors = await response.json();
-  return doctors;
-}
-
-async function getConsultants() {
-  const response = await fetch("http://localhost:5000/consultants");
-  const doctors = await response.json();
-  return doctors;
-}
-
-async function getClinics() {
-  const response = await fetch("http://localhost:5000/clinics");
-  const doctors = await response.json();
-  return doctors;
-}
+import { getDoctors } from "./api/doctor.ts";
+import { Person } from "./models/person.ts";
+import { getConsultants } from "./api/consultants.ts";
+import { Consultant } from "./models/consultant.ts";
+import { getClinics } from "./api/clinic.ts";
 
 function App() {
-  const [doctors, setDoctors] = useState([]);
-  const [consultants, setConsultants] = useState([]);
-  const [clinics, setClinics] = useState([]);
+  const [doctors, setDoctors] = useState<Person[]>([]);
+  const [consultants, setConsultants] = useState<Consultant[]>([]);
+  const [clinics, setClinics] = useState<Person[]>([]);
 
   useEffect(() => {
     getDoctors().then((x) => setDoctors(x));
@@ -60,7 +47,7 @@ function App() {
           main: "مشاورین ",
           suffix: "در دسترس",
         }}
-        persons={consultants}
+        consultants={consultants}
       />
       <Banner />
       <Cards

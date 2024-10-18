@@ -1,15 +1,5 @@
 import styles from "./Card.module.css";
-
-export type Person = {
-  ID: string;
-  name: string;
-  star: string;
-  specialtyId: string;
-  happyPatients: number;
-  allPatients: number;
-  address: string;
-  image: string;
-};
+import { Person } from "../../../../models/person.ts";
 
 type props = {
   person: Person;

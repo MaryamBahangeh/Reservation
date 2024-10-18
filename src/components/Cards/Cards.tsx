@@ -1,7 +1,8 @@
 import styles from "./Cards.module.css";
-import Card, { Person } from "./components/Card/Card.tsx";
+import Card from "./components/Card/Card.tsx";
 import Title, { titleProps } from "../Title/Title.tsx";
 import Indicator from "../../components/Indicator/Indicator.tsx";
+import { Person } from "../../models/person.ts";
 
 type props = {
   title: titleProps;
