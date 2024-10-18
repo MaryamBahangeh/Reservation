@@ -18,7 +18,7 @@ function Feedback() {
       <div className={styles.container}>
         {feedbacks.map((feedback) =>
           ["1", "5"].includes(feedback.id) ? (
-            <FadeFeedbackCard />
+            <FadeFeedbackCard key={feedback.id} />
           ) : ["2", "4"].includes(feedback.id) ? (
             <SmallFeedbackCard key={feedback.id} feedbackCardProps={feedback} />
           ) : (

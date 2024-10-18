@@ -16,7 +16,7 @@ function Consults({ title, persons }: props) {
       ></Title>
       <div className={styles.container}>
         {persons.map((person) => (
-          <Consult person={person} />
+          <Consult key={person.ID} person={person} />
         ))}
       </div>
       <Indicator />
