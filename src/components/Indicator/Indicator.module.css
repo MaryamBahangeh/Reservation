@@ -3,4 +3,12 @@
   gap: 2.4rem;
   justify-self: center;
   align-items: center;
+
+  button {
+    appearance: none;
+
+    border: none;
+
+    cursor: pointer;
+  }
 }
