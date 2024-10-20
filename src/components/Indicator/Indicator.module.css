@@ -3,4 +3,11 @@
   gap: 2.4rem;
   justify-self: center;
   align-items: center;
+
+  button {
+    border: none;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
 }

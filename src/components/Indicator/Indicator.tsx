@@ -1,11 +1,20 @@
-import React from "react";
 import styles from "./Indicator.module.css";
-function Indicator(props) {
+
+type Props = {
+  onNext: () => void;
+  onPrevious: () => void;
+};
+function Indicator({ onPrevious, onNext }: Props) {
   return (
     <div className={styles.indicator}>
-      <img src="/images/feedback/arrow-right.png" alt="" />{" "}
+      <button onClick={onPrevious}>
+        {" "}
+        <img src="/images/feedback/arrow-right.png" alt="" />
+      </button>
       <img className={styles.pages} src="/images/feedback/pages.png" alt="" />
-      <img src="/images/feedback/arrow-left.png" alt="" />
+      <button onClick={onNext}>
+        <img src="/images/feedback/arrow-left.png" alt="" />
+      </button>
     </div>
   );
 }

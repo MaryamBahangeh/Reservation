@@ -7,14 +7,27 @@ import Banner from "./components/Banner/Banner.tsx";
 import NewsLetter from "./components/NewsLetter/NewsLetter.tsx";
 import ButtomBanner from "./components/BottomBanner/BottomBanner.tsx";
 import Feedback from "./components/Feedback/Feedback.tsx";
-import doctors from "./assets/data/doctors.json";
-import clinics from "./assets/data/clinics.json";
-import consultants from "./assets/data/consultants.json";
 import Footer from "./components/Footer/Footer.tsx";
 import Message from "./components/Message/Message.tsx";
+import { getDoctors } from "./api/doctor.ts";
+import { getConsultants } from "./api/consultant.ts";
+import { getClinics } from "./api/clininc.ts";
 import "./App.css";
+import { useEffect, useState } from "react";
+import { Person } from "./model/person.ts";
+import { Consultant } from "./model/consultant.ts";
 
 function App() {
+  const [clinics, setClinics] = useState<Person[]>([]);
+  const [consultants, setConsultants] = useState<Consultant[]>([]);
+  const [doctors, setDoctors] = useState<Person[]>([]);
+
+  useEffect(() => {
+    getClinics().then((x: Person[]) => setClinics(x));
+    getDoctors().then((x: Person[]) => setDoctors(x));
+    getConsultants().then((x: Consultant[]) => setConsultants(x));
+  }, []);
+
   return (
     <>
       <Navbar />
@@ -34,7 +47,7 @@ function App() {
           main: "مشاورین ",
           suffix: "در دسترس",
         }}
-        persons={consultants}
+        consultants={consultants}
       />
       <Banner />
       <Cards
