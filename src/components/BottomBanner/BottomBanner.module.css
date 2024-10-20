@@ -63,17 +63,17 @@
   }
 }
 
-/*@media (max-width: 120rem) {*/
-/*  .main-div {*/
-/*    .container {*/
-/*      flex-direction: column;*/
+@media (max-width: 1200px) {
+  .main-div {
+    .container {
+      flex-direction: column;
 
-/*      .info-div {*/
-/*        order: 1;*/
-/*      }*/
-/*      .insurance-image {*/
-/*        align-self: auto;*/
-/*      }*/
-/*    }*/
-/*  }*/
-/*}*/
+      .info-div {
+        order: 1;
+      }
+      .insurance-image {
+        align-self: auto;
+      }
+    }
+  }
+}
