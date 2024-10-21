@@ -1,7 +1,11 @@
 .button {
   padding-inline: 1.6rem;
-  padding-block: 0.5rem 0.7rem;
+
   border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
 
   --active-color: hsl(173, 57%, 28%);
   --contrast-active-color: hsl(0, 0%, 98%);
@@ -65,14 +69,17 @@
   &.small {
     font-size: 1.4rem;
     line-height: 1.8rem;
+    padding-block: 0.5rem 0.7rem;
   }
 
   &.medium {
     font-size: 1.6rem;
+    padding-block: 0.8rem;
   }
 
   &.large {
     font-size: 1.6rem;
+    padding-block: 1.2rem;
   }
 
   &.huge {

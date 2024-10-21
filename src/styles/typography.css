@@ -1,0 +1,79 @@
+.title-t1-bold {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.55;
+}
+.title-t1-medium {
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 1.55;
+}
+.title-t1-regular {
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+.title-t2-bold {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.title-t2-medium {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.title-t2-regular {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.title-t3-bold {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.title-t3-medium {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.title-t3-regular {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.lable-l1-bold {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.lable-l1-medium {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.lable-l1-regular {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.lable-l2-bold {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.lable-l2-medium {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.lable-l2-regular {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.lable-l3-bold {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.lable-l3-medium {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.lable-l3-regular {
+  font-size: 1.1rem;
+  font-weight: 400;
+}

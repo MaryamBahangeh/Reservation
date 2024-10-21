@@ -22,7 +22,7 @@ function InfoNav() {
 
           <li>
             <a className={styles.address} href="#">
-              <img src="/images/icons/balck-location.png" /> + انتخاب آدرس
+              <img src="/images/icons/black-location.png" /> + انتخاب آدرس
             </a>
           </li>
         </ul>

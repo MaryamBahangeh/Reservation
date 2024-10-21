@@ -27,7 +27,7 @@ function Card({ person }: props) {
       </div>
       <hr />
       <div className={styles.address}>
-        <img alt="" src="/images/icons/balck-location.png"></img>
+        <img alt="" src="/images/icons/black-location.png"></img>
         {person.address}
       </div>
     </div>

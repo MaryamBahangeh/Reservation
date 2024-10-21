@@ -1,5 +1,6 @@
 @import "./styles/colors.css";
 @import "./styles/spacing.css";
+@import "./styles/typography.css";
 
 html {
   font-family: IRANSansXFaNum, sans-serif;
