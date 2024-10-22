@@ -1,5 +1,4 @@
 import styles from "./Feedback.module.css";
-import Indicator from "../../components/Indicator/Indicator.tsx";
 import feedbacks from "../../assets/data/feedback.json";
 import FeedbackCard from "./components/FeedbackCard/FeedbackCard.tsx";
 import SmallFeedbackCard from "./components/SmallFeedbackCard/SmallFeedbackCard.tsx";
@@ -26,7 +25,6 @@ function Feedback() {
           ),
         )}
       </div>
-      <Indicator />
     </div>
   );
 }

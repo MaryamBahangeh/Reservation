@@ -3,6 +3,8 @@ import FilterCard from "./FilterCard/FilterCard.tsx";
 import Sorting from "./Sorting/Sorting.tsx";
 import styles from "./TurnContent.module.css";
 import { getDoctors } from "../../../api/doctor.ts";
+import { useEffect, useState } from "react";
+import { Person } from "../../model/person.ts";
 function TurnContent() {
   return (
     <div className={styles["turn-content"]}>
@@ -13,7 +15,6 @@ function TurnContent() {
         <Sorting />
       </div>
       <div className={styles.doctor}>
-        {" "}
         <DoctorCard />
       </div>
     </div>

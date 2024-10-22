@@ -1,5 +1,4 @@
 import styles from "./Hero.module.css";
-import Button, { Color, Size, Variant } from "../Button/Button.tsx";
 
 function Hero() {
   return (
