@@ -77,3 +77,8 @@
   font-size: 1.1rem;
   font-weight: 400;
 }
+.body-b1-medium {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.55;
+}

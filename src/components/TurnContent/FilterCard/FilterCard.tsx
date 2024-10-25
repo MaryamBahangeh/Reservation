@@ -42,16 +42,23 @@ function FilterCard({
 
         <div className={styles.option}>
           <div>
-            <img src="./images/icons/green-call.png" />
-            <span>تلفنی</span>
+            <button>
+              <img src="./images/icons/green-call.png" />
+            </button>
+
+            <span className={styles.green + " body-b1-medium"}>تلفنی</span>
           </div>
           <div>
-            <img src="./images/icons/online-bigsize.png" />
-            <span>آنلاین</span>
+            <button>
+              <img src="./images/icons/online-bigsize.png" />
+            </button>
+            <span className={"body-b1-medium"}>آنلاین</span>
           </div>
           <div>
-            <img src="./images/icons/bulding-bigsize.png" />
-            <span>حضوری</span>
+            <button>
+              <img src="./images/icons/bulding-bigsize.png" />
+            </button>
+            <span className={"body-b1-medium"}>حضوری</span>
           </div>
         </div>
         <div className={styles.line}></div>
