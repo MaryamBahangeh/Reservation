@@ -1,8 +1,12 @@
 import styles from "./Search.module.css";
 
-function Search() {
+type Props = {
+  className?: string;
+};
+
+function Search({ className }: Props) {
   return (
-    <div className={styles.search}>
+    <div className={`${styles.search} ${className}`}>
       <img
         className={styles["search-icon"]}
         alt="search"
