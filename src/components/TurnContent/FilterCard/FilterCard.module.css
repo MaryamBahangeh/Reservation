@@ -27,6 +27,7 @@
   .content {
     display: grid;
     gap: 2.4rem;
+    grid-template-columns: min-content;
     .option {
       display: flex;
       gap: 8.2rem;
@@ -47,6 +48,7 @@
     .container {
       display: flex;
       gap: 2.4rem;
+      flex-flow: row wrap;
       div {
         display: flex;
         gap: 0.3rem;

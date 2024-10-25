@@ -1,28 +1,37 @@
 import styles from "./DoctorCard.module.css";
 import Button, { Color, Size, Variant } from "../../Button/Button.tsx";
+import { Person } from "../../../model/person.ts";
 
-function DoctorCard() {
+function DoctorCard({ person }: { person: Person }) {
+  const getServiceNames = (person: Person) => {
+    let serviceNames = "";
+    for (let i = 0; i < person.services.length; i++) {
+      serviceNames = serviceNames.concat(person.services[i].name) + "/ ";
+    }
+    return serviceNames.substring(0, serviceNames.length - 2);
+  };
   return (
     <div className={styles["doctor-card"]}>
       <div className={styles.title}>
         <div className={styles.doctor}>
-          <img
-            className={styles.pic}
-            alt="doctor-pic"
-            src="./images/doctor-card/dr-pic1.png"
-          />
-          <div className={styles.name}>ناتدا سیبیب</div>
-          <div className={styles.speciality}>مننک صثیص</div>
+          <img className={styles.pic} alt="doctor-pic" src={person.image} />
+          <div className={styles.name}>{person.name}</div>
+          <div className={styles.speciality}>{person.specialtyName}</div>
         </div>
 
         <div className={styles.rate}>
           <div className={styles.percent}>
             <img src="./images/icons/like.png" />
-            <span className={styles.percent}>97% پیشنهاد کاربران</span>
+            <span className={styles.percent}>
+              {Math.ceil((person.happyPatients / person.allPatients) * 100)}%
+              پیشنهاد کاربران
+            </span>
           </div>
           <div className={styles.star}>
             <img src="./images/icons/star.png" />
-            <span>4.5/5 از (نظر 320)</span>
+            <span>
+              {person.star}/5 از (نظر {person.allPatients})
+            </span>
           </div>
         </div>
       </div>
@@ -32,10 +41,7 @@ function DoctorCard() {
       <div className={styles.content}>
         <span className={styles["service-title"]}>
           خدمات:{" "}
-          <span className={styles.subtitle}>
-            {" "}
-            جراحی مغز/درمان میگرن/عصب شناسی/نورولوژی/ستون فقرات
-          </span>{" "}
+          <span className={styles.subtitle}>{getServiceNames(person)}</span>{" "}
         </span>
         <div className={styles["types-container"]}>
           <span className={styles["type-title"]}>شیوه نوبت دهی :</span>

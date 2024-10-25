@@ -18,6 +18,9 @@
 
       .pic {
         grid-area: pic;
+        border-radius: 100%;
+        height: 100px;
+        width: 100px;
       }
 
       .name {
@@ -37,7 +40,8 @@
     .rate {
       display: grid;
       gap: var(--spacing-3);
-
+      padding-block: 1rem;
+      justify-items: end;
       .percent {
         display: flex;
         align-items: center;
