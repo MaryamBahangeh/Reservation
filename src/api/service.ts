@@ -1,5 +1,5 @@
 import { Service } from "../model/service.ts";
 export async function getServices(): Promise<Service[]> {
-  const response = await fetch("http://localhost:5000/services");
+  const response = await fetch(`${import.meta.env.VITE_API_BAES_URL}/services`);
   return await response.json();
 }
