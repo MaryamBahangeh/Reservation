@@ -6,10 +6,17 @@ import { getDoctorServices } from "../../api/doctor.ts";
 import React, { useEffect, useState } from "react";
 import { Person } from "../../model/person.ts";
 import { Speciality } from "../../model/speciality.ts";
+import { Gender } from "../../enums/gender.ts";
 
 function TurnContent() {
   const [doctors, setDoctors] = useState<Person[]>([]);
   const [originalDoctors, setOriginalDoctors] = useState<Person[]>([]);
+
+  const [activeSpeciality, setActiveSpeciality] = useState<Speciality | null>(
+    null,
+  );
+
+  const [activeGender, setActiveGender] = useState<Gender | null>(null);
 
   useEffect(() => {
     getDoctorServices().then((x: Person[]) => {
@@ -18,7 +25,40 @@ function TurnContent() {
     });
   }, []);
 
+  useEffect(() => {
+    const filteredBySpecialty = filterBySpecialty(
+      originalDoctors,
+      activeSpeciality,
+    );
+
+    const filteredByGender = filterByGender(filteredBySpecialty, activeGender);
+
+    setDoctors(filteredByGender);
+  }, [activeSpeciality, activeGender, originalDoctors]);
+
+  const filterBySpecialty = (
+    data: Person[],
+    specialty: Speciality | null,
+  ): Person[] => {
+    if (specialty === null) {
+      return data;
+    }
+
+    return data.filter((x) => x.specialtyId === specialty.id);
+  };
+
+  const filterByGender = (data: Person[], gender: Gender | null): Person[] => {
+    if (gender === null) {
+      return data;
+    }
+
+    return data.filter((x) => x.gender === gender);
+  };
+
   const resetHandler = (): void => {
+    setActiveSpeciality(null);
+    setActiveGender(null);
+
     setDoctors(originalDoctors);
   };
 
@@ -36,25 +76,12 @@ function TurnContent() {
     setDoctors(filteredDoctors);
   };
 
-  const genderChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value;
-    const filteredDoctors: Person[] = originalDoctors.filter(
-      (x: Person) => x.gender === value,
-    );
-    setDoctors(filteredDoctors);
+  const genderChangeHandler = (value: Gender | null) => {
+    setActiveGender(value);
   };
 
   const specialityChangeHandler = (value: Speciality | null) => {
-    if (value === null) {
-      setDoctors(originalDoctors);
-      return;
-    }
-
-    const filteredDoctors: Person[] = originalDoctors.filter(
-      (x: Person) => x["specialtyId"] === value.id,
-    );
-
-    setDoctors(filteredDoctors);
+    setActiveSpeciality(value);
   };
 
   return (
@@ -62,6 +89,8 @@ function TurnContent() {
       <div className={styles.filter}>
         <div>
           <FilterCard
+            activeSpeciality={activeSpeciality}
+            activeGender={activeGender}
             onGenderChange={genderChangeHandler}
             onSpecialtyChange={specialityChangeHandler}
             onServiceChange={serviceChangeHandler}

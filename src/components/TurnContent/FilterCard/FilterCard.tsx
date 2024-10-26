@@ -4,15 +4,20 @@ import { Service } from "../../../model/service.ts";
 import React, { useEffect, useState } from "react";
 import { getSpecialities } from "../../../api/speciality.ts";
 import { Speciality } from "../../../model/speciality.ts";
+import { Gender } from "../../../enums/gender.ts";
 
 type Props = {
-  onGenderChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  activeSpeciality: Speciality | null;
+  activeGender: Gender | null;
+  onGenderChange: (value: Gender | null) => void;
   onSpecialtyChange: (value: Speciality | null) => void;
   onServiceChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onReset: () => void;
 };
 
 function FilterCard({
+  activeSpeciality,
+  activeGender,
   onGenderChange,
   onSpecialtyChange,
   onServiceChange,
@@ -21,24 +26,9 @@ function FilterCard({
   const [services, setServices] = useState<Service[]>([]);
   const [specialities, setSpecialities] = useState<Speciality[]>([]);
 
-  const [activeSpeciality, setActiveSpeciality] = useState<Speciality | null>(
-    null,
-  );
-
-  const specialityChangeHandler = (value: Speciality | null): void => {
-    setActiveSpeciality(value);
-    onSpecialtyChange(value);
-  };
-
-  const resetHandler = (): void => {
-    setActiveSpeciality(null);
-    onReset();
-  };
-
   useEffect(() => {
     getServices().then((x: Service[]) => setServices(x));
     getSpecialities().then((x: Speciality[]) => setSpecialities(x));
-    document.getElementById("bothGender").checked = true;
     document.getElementById("allServices").checked = true;
   }, []);
 
@@ -49,7 +39,7 @@ function FilterCard({
           <img src="./images/icons/filter.png" alt="Filter" />
           <span>فیلتر کردن</span>
         </div>
-        <button onClick={resetHandler}>حذف فیلترها</button>
+        <button onClick={onReset}>حذف فیلترها</button>
       </div>
 
       <div className={styles.content}>
@@ -86,7 +76,7 @@ function FilterCard({
                 type="radio"
                 id={`speciality-${item.id}`}
                 name="specialities"
-                onChange={() => specialityChangeHandler(item)}
+                onChange={() => onSpecialtyChange(item)}
                 checked={activeSpeciality === item}
               />
               <label htmlFor={`speciality-${item.id}`}>{item.name}</label>
@@ -97,7 +87,7 @@ function FilterCard({
               type="radio"
               id="allSpeciality"
               name="specialities"
-              onChange={() => specialityChangeHandler(null)}
+              onChange={() => onSpecialtyChange(null)}
               checked={activeSpeciality === null}
             />
             <label htmlFor="allSpeciality">همه</label>
@@ -135,33 +125,32 @@ function FilterCard({
           <div>
             <input
               type="radio"
-              id="bothGender"
+              id="gender-all"
               name="gender"
-              value="2"
-              onChange={onGenderChange}
+              onChange={() => onGenderChange(null)}
+              checked={activeGender === null}
             />
-            <label htmlFor="both">هر دو</label>
-          </div>
-
-          <div>
-            <input
-              type="radio"
-              id="female"
-              name="gender"
-              value="1"
-              onChange={onGenderChange}
-            />
-            <label htmlFor="female">زن</label>
+            <label htmlFor="gender-all">هر دو</label>
           </div>
           <div>
             <input
               type="radio"
-              id="male"
+              id="gender-female"
               name="gender"
-              value="0"
-              onChange={onGenderChange}
+              onChange={() => onGenderChange(Gender.FEMALE)}
+              checked={activeGender === Gender.FEMALE}
             />
-            <label htmlFor="male">مرد</label>
+            <label htmlFor="gender-female">زن</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="gender-male"
+              name="gender"
+              onChange={() => onGenderChange(Gender.MALE)}
+              checked={activeGender === Gender.MALE}
+            />
+            <label htmlFor="gender-male">مرد</label>
           </div>
         </div>
         <div className={styles.line}></div>
