@@ -7,6 +7,7 @@ import React, { useEffect, useState } from "react";
 import { Person } from "../../model/person.ts";
 import { Service } from "../../model/service.ts";
 import Button from "../Button/Button.tsx";
+import { Speciality } from "../../model/speciality.ts";
 
 function TurnContent() {
   const [doctors, setDoctors] = useState<Person[]>([]);
@@ -36,15 +37,16 @@ function TurnContent() {
     );
     setDoctors(filteredDoctors);
   };
-  const specialityChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = parseInt(e.target.value);
-    if (value === 0) {
+  const specialityChangeHandler = (value: Speciality | null) => {
+    if (value === null) {
       setDoctors(originalDoctors);
       return;
     }
+
     const filteredDoctors: Person[] = originalDoctors.filter(
-      (x: Person) => x["specialtyId"] === value,
+      (x: Person) => x["specialtyId"] === value.id,
     );
+
     setDoctors(filteredDoctors);
   };
 

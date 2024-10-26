@@ -7,7 +7,7 @@ import { Speciality } from "../../../model/speciality.ts";
 
 type Props = {
   onGenderChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  onSpecialtyChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onSpecialtyChange: (value: Speciality | null) => void;
   onServiceChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
@@ -17,12 +17,20 @@ function FilterCard({
   onServiceChange,
 }: Props) {
   const [services, setServices] = useState<Service[]>([]);
-  const [speciality, setSpeciality] = useState<Speciality[]>([]);
+  const [specialities, setSpecialities] = useState<Speciality[]>([]);
+
+  const [activeSpeciality, setActiveSpeciality] = useState<Speciality | null>(
+    null,
+  );
+
+  const specialityChangeHandler = (value: Speciality | null): void => {
+    setActiveSpeciality(value);
+    onSpecialtyChange(value);
+  };
 
   useEffect(() => {
     getServices().then((x: Service[]) => setServices(x));
-    getSpecialities().then((x: Speciality[]) => setSpeciality(x));
-    document.getElementById("allSpeciality").checked = true;
+    getSpecialities().then((x: Speciality[]) => setSpecialities(x));
     document.getElementById("bothGender").checked = true;
     document.getElementById("allServices").checked = true;
   }, []);
@@ -65,25 +73,25 @@ function FilterCard({
 
         <div className={styles.container}>
           <span>تخصص:</span>
-          {speciality.map((item: Speciality) => (
+          {specialities.map((item) => (
             <div>
               <input
                 type="radio"
-                id="speciality"
+                id={`speciality-${item.id}`}
                 name="specialities"
-                value={item.id}
-                onChange={onSpecialtyChange}
+                onChange={() => specialityChangeHandler(item)}
+                checked={activeSpeciality === item}
               />
-              <label htmlFor="speciality">{item.name}</label>
+              <label htmlFor={`speciality-${item.id}`}>{item.name}</label>
             </div>
           ))}{" "}
           <div>
             <input
               type="radio"
               id="allSpeciality"
-              value="0"
               name="specialities"
-              onChange={onSpecialtyChange}
+              onChange={() => specialityChangeHandler(null)}
+              checked={activeSpeciality === null}
             />
             <label htmlFor="allSpeciality">همه</label>
           </div>
