@@ -5,38 +5,45 @@ import styles from "./TurnContent.module.css";
 import { getDoctorServices } from "../../api/doctor.ts";
 import React, { useEffect, useState } from "react";
 import { Person } from "../../model/person.ts";
-import { Service } from "../../model/service.ts";
-import Button from "../Button/Button.tsx";
 import { Speciality } from "../../model/speciality.ts";
 
 function TurnContent() {
   const [doctors, setDoctors] = useState<Person[]>([]);
   const [originalDoctors, setOriginalDoctors] = useState<Person[]>([]);
+
   useEffect(() => {
     getDoctorServices().then((x: Person[]) => {
-      services(x);
+      setOriginalDoctors(x);
+      setDoctors(x);
     });
   }, []);
+
+  const resetHandler = (): void => {
+    setDoctors(originalDoctors);
+  };
 
   const serviceChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = parseInt(e.target.value);
     if (value === 0) {
-      services(originalDoctors);
+      setDoctors(originalDoctors);
       return;
     }
-    const filteredDoctors: Person[] = originalDoctors.filter(
-      (x: Person) => x.serviceId === value,
+
+    const filteredDoctors: Person[] = originalDoctors.filter((doctor: Person) =>
+      doctor.services.some((service) => service.id === value),
     );
-    services(filteredDoctors);
+
+    setDoctors(filteredDoctors);
   };
 
   const genderChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
-    const filteredDoctors: Person[] = originalDoctors.filter((x: Person) =>
-      value == "0" ? !x.gender : value == "1" ? x.gender : true,
+    const filteredDoctors: Person[] = originalDoctors.filter(
+      (x: Person) => x.gender === value,
     );
     setDoctors(filteredDoctors);
   };
+
   const specialityChangeHandler = (value: Speciality | null) => {
     if (value === null) {
       setDoctors(originalDoctors);
@@ -50,30 +57,6 @@ function TurnContent() {
     setDoctors(filteredDoctors);
   };
 
-  const services = (x: Person[]) => {
-    if (x.length == 0) {
-      setDoctors([]);
-      return;
-    }
-    const doctors: Person[] = [];
-    let currentDoctor = x[0];
-    let services: Service[] = [];
-
-    for (let i = 0; i < x.length; i++) {
-      if (currentDoctor.id !== x[i].id) {
-        currentDoctor["services"] = services;
-        doctors.push(currentDoctor);
-        currentDoctor = x[i];
-        services = [];
-      }
-      services.push({ id: x[i].serviceId, name: x[i].serviceName });
-    }
-    currentDoctor["services"] = services;
-    doctors.push(currentDoctor);
-    setDoctors(doctors);
-    setOriginalDoctors(doctors.map((x) => x));
-  };
-
   return (
     <div className={styles["turn-content"]}>
       <div className={styles.filter}>
@@ -82,6 +65,7 @@ function TurnContent() {
             onGenderChange={genderChangeHandler}
             onSpecialtyChange={specialityChangeHandler}
             onServiceChange={serviceChangeHandler}
+            onReset={resetHandler}
           />
         </div>
         <div className={styles.advertise}>

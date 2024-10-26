@@ -9,12 +9,14 @@ type Props = {
   onGenderChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onSpecialtyChange: (value: Speciality | null) => void;
   onServiceChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onReset: () => void;
 };
 
 function FilterCard({
   onGenderChange,
   onSpecialtyChange,
   onServiceChange,
+  onReset,
 }: Props) {
   const [services, setServices] = useState<Service[]>([]);
   const [specialities, setSpecialities] = useState<Speciality[]>([]);
@@ -26,6 +28,11 @@ function FilterCard({
   const specialityChangeHandler = (value: Speciality | null): void => {
     setActiveSpeciality(value);
     onSpecialtyChange(value);
+  };
+
+  const resetHandler = (): void => {
+    setActiveSpeciality(null);
+    onReset();
   };
 
   useEffect(() => {
@@ -42,7 +49,7 @@ function FilterCard({
           <img src="./images/icons/filter.png" alt="Filter" />
           <span>فیلتر کردن</span>
         </div>
-        <button>حذف فیلترها</button>
+        <button onClick={resetHandler}>حذف فیلترها</button>
       </div>
 
       <div className={styles.content}>

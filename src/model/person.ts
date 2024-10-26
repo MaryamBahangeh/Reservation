@@ -1,9 +1,10 @@
 import { Service } from "./service.ts";
+import { Gender } from "../enums/gender.ts";
 
 export type Person = {
   id: number;
   name: string;
-  gender: boolean;
+  gender: Gender;
   star: string;
   happyPatients: number;
   allPatients: number;
@@ -12,7 +13,5 @@ export type Person = {
   image: string;
   specialtyId: number;
   specialtyName: string;
-  serviceId: number;
-  serviceName: string;
   services: Service[];
 };
