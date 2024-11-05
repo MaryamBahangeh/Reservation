@@ -3,9 +3,8 @@
   border-radius: 1rem;
   background-color: hsl(0, 0%, 100%);
 
-  max-inline-size: 55%;
-  margin-block-start: 4.8rem;
-  margin-inline-start: 12rem;
+  inline-size: 100%;
+  max-inline-size: 80rem;
 
   input {
     font-size: 2rem;

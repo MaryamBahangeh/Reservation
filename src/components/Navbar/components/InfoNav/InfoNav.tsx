@@ -3,10 +3,10 @@ function InfoNav() {
   return (
     <div className={styles.infoNav}>
       <div className={styles.social}>
-        <img src="/images/icons/instagram.png" />
-        <img src="/images/icons/telegram.png" />
-        <img src="/images/icons/youtube.png" />
-        <img src="/images/icons/linkedin.png" />
+        <img src="/icons/instagram.png" />
+        <img src="/icons/telegram.png" />
+        <img src="/icons/youtube.png" />
+        <img src="/icons/linkedin.png" />
       </div>
       <nav aria-label="secondary-navigation">
         <ul>
@@ -22,7 +22,7 @@ function InfoNav() {
 
           <li>
             <a className={styles.address} href="#">
-              <img src="/images/icons/black-location.png" /> + انتخاب آدرس
+              <img src="/icons/black-location.png" /> + انتخاب آدرس
             </a>
           </li>
         </ul>

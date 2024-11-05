@@ -9,14 +9,9 @@ function Consult({ consultant }: { consultant: Consultant }) {
         <div className={styles.name}>
           <div className={styles["doctor-name"]}>{consultant.name}</div>
           <span className={styles.star}>{consultant.star}</span>
-          <img alt="" src="/images/icons/star.png"></img>
+          <img alt="" src="/icons/star.png"></img>
         </div>
         <div className={styles.special}>{consultant.specialtyName}</div>
-        {/*<div className={styles.fields}>*/}
-        {/*  {consultant.fields.map((field) => (*/}
-        {/*    <button>{field}</button>*/}
-        {/*  ))}*/}
-        {/*</div>*/}
       </div>
 
       <hr />

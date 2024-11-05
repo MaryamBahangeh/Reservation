@@ -13,11 +13,11 @@
     .doctor {
       display: grid;
       align-items: center;
-      grid-template-areas: "pic name" "pic speciality";
+      grid-template-areas: "img name" "img speciality";
       gap: var(--spacing-3);
 
-      .pic {
-        grid-area: pic;
+      img {
+        grid-area: img;
         border-radius: 100%;
         height: 100px;
         width: 100px;
@@ -106,13 +106,7 @@
       display: flex;
       gap: 1.2rem;
       button {
-        font-size: 1.2rem;
         border-radius: 20rem;
-        border: 0.1rem solid hsl(173, 57%, 28%);
-        padding-inline: 1.2rem;
-        padding-block: 0.5rem;
-        background-color: transparent;
-        color: hsl(173, 57%, 28%);
       }
     }
 

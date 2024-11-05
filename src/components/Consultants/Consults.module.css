@@ -6,6 +6,7 @@
   .container {
     overflow: hidden;
   }
+
   .scroller {
     display: flex;
     gap: 2.4rem;

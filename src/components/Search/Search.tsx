@@ -1,18 +1,24 @@
 import styles from "./Search.module.css";
+import Button, { Color, Size, Variant } from "../Button/Button.tsx";
 
-function Search() {
+function Search({ className }: { className?: string }) {
   return (
-    <div className={styles.search}>
+    <div className={`${styles.search} ${className}`}>
       <img
         className={styles["search-icon"]}
-        alt="search"
-        src="/images/icons/search-normal.png"
+        alt=""
+        src="/icons/search-normal.png"
       />
       <input type="text" placeholder="جستجو پزشک،درمانگر،کلینیک..." />
-      <button>
-        <img alt="location" src="/images/icons/green-location.png" />
-        انتخاب شهر
-      </button>
+      <Button
+        variant={Variant.OUTLINE}
+        color={Color.PRIMARY}
+        size={Size.MEDIUM}
+        buttonText="انتخاب شهر"
+        prefix="/icons/green-location.png"
+      >
+        {" "}
+      </Button>
     </div>
   );
 }

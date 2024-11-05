@@ -1,4 +1,5 @@
 import styles from "./Hero.module.css";
+import Search from "../Search/Search.tsx";
 
 function Hero() {
   return (
@@ -24,18 +25,7 @@ function Hero() {
         <div>کافیست خدمات درمانی موردنظر خود را جستجو کنید</div>
         <div>(دریافت نوبت،مشاوره پزشکی،خدمات پزشکی در منزل)</div>
       </div>
-      <div className={styles.search}>
-        <img
-          className={styles["search-icon"]}
-          alt="search"
-          src="/images/icons/search-normal.png"
-        />
-        <input type="text" placeholder="جستجو پزشک،درمانگر،کلینیک..." />
-        <button>
-          <img alt="location" src="/images/icons/green-location.png" />
-          انتخاب شهر
-        </button>
-      </div>
+      <Search className={styles.search} />
     </div>
   );
 }

@@ -14,21 +14,21 @@ function DoctorCard({ person }: { person: Person }) {
     <div className={styles["doctor-card"]}>
       <div className={styles.title}>
         <div className={styles.doctor}>
-          <img className={styles.pic} alt="doctor-pic" src={person.image} />
+          <img alt="doctor-pic" src={person.image} />
           <div className={styles.name}>{person.name}</div>
           <div className={styles.speciality}>{person.specialtyName}</div>
         </div>
 
         <div className={styles.rate}>
           <div className={styles.percent}>
-            <img src="./images/icons/like.png" />
+            <img src="./icons/like.png" />
             <span className={styles.percent}>
               {Math.ceil((person.happyPatients / person.allPatients) * 100)}%
               پیشنهاد کاربران
             </span>
           </div>
           <div className={styles.star}>
-            <img src="./images/icons/star.png" />
+            <img src="./icons/star.png" />
             <span>
               {person.star}/5 از (نظر {person.allPatients})
             </span>
@@ -46,35 +46,61 @@ function DoctorCard({ person }: { person: Person }) {
         <div className={styles["types-container"]}>
           <span className={styles["type-title"]}>شیوه نوبت دهی :</span>
           <div className={styles.type}>
-            <img src="./images/icons/call.png" />
+            <img src="./icons/call.png" />
             <span>گفتگو تلفنی</span>
           </div>
 
           <div className={styles.type}>
-            <img src="./images/icons/online.png" />
+            <img src="./icons/online.png" />
             <span>جلسه آنلاین</span>
           </div>
 
           <div className={styles.type}>
-            <img src="./images/icons/building.png" />
+            <img src="./icons/building.png" />
             <span>حضوری</span>
           </div>
         </div>
         <div className={styles.options}>
           <span>شاخصه ها :</span>
-          <button>سالن انتظار</button>
-          <button>آسانسور</button>
-          <button>پارکینگ</button>
-          <button>تخت بیمار</button>
+          <Button
+            variant={Variant.OUTLINE}
+            size={Size.VERYSMALL}
+            color={Color.PRIMARY}
+            buttonText="سالن انتظار"
+            {...[styles.buttonx]}
+          ></Button>
+          <Button
+            variant={Variant.OUTLINE}
+            size={Size.VERYSMALL}
+            color={Color.PRIMARY}
+            buttonText="آسانسور"
+            {...[styles.buttonx]}
+          ></Button>
+
+          <Button
+            variant={Variant.OUTLINE}
+            size={Size.VERYSMALL}
+            color={Color.PRIMARY}
+            buttonText="پارکینگ"
+            {...[styles.buttonx]}
+          ></Button>
+
+          <Button
+            variant={Variant.OUTLINE}
+            size={Size.VERYSMALL}
+            color={Color.PRIMARY}
+            buttonText="تخت بیمار"
+            {...[styles.buttonx]}
+          ></Button>
         </div>
 
         <div className={styles["working-times"]}>
           <div className={styles.times}>
-            <img src="./images/icons/clock.png" />
+            <img src="./icons/clock.png" />
             <span>ساعت کاری : شنبه تا چهارشنبه 9صبح تا 6 عصر</span>
           </div>
           <div className={styles.success}>
-            <img src="./images/icons/tick-circle.png" />
+            <img src="./icons/tick-circle.png" />
             <span>1232 نوبت موفق در نوبیتو</span>
           </div>
         </div>
@@ -83,12 +109,16 @@ function DoctorCard({ person }: { person: Person }) {
 
       <div className={styles["address-container"]}>
         <div className={styles.address}>
-          <img src="./images/icons/location.png" />
+          <img src="./icons/location.png" />
           <span>نشانی : تهران،بلوار کشاورز،خ فلسطین،کوچه24،ساختمان لاله</span>
         </div>
-        <Button variant={Variant.FILL} size={Size.MEDIUM} color={Color.PRIMARY}>
-          دریافت نوبت <img src="./images/icons/arrow-left.png" />
-        </Button>
+        <Button
+          variant={Variant.FILL}
+          size={Size.MEDIUM}
+          color={Color.PRIMARY}
+          buttonText="دریافت نوبت"
+          suffix="./icons/arrow-left.png"
+        ></Button>
       </div>
     </div>
   );

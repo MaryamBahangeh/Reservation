@@ -17,7 +17,7 @@ function Footer() {
       <Contact />
       <div className={styles.social}>
         <div>
-          <img className={styles.icons} src="/images/icons/copy.png" />
+          <img className={styles.icons} src="/icons/copy.png" />
           <span>تمامی حقوق این وبسایت متعلق به شرکت نوبیتو است</span>
         </div>
         <div className={styles["social-icons"]}>

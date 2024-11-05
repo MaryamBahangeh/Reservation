@@ -14,7 +14,7 @@ function Title({ prefix, main, suffix }: titleProps) {
       </h2>
       <hr className={styles.hr} />
       <div className={styles["subtitle-text"]}>
-        مشاهده همه <img alt="" src="/images/icons/arrow-left-grey.png"></img>
+        مشاهده همه <img alt="" src="/icons/arrow-left-grey.png"></img>
       </div>
     </div>
   );

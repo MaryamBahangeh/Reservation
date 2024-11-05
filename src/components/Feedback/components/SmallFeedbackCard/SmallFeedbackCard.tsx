@@ -15,13 +15,13 @@ function SmallFeedbackCard({
           <div className={styles.date}> تاریخ: {feedbackCardProps.date}</div>
         </div>
         <span className={styles.rate}>
-          {feedbackCardProps.star} <img src="/images/icons/star.png" />
+          {feedbackCardProps.star} <img src="/icons/star.png" />
         </span>
       </div>
 
       <p>{feedbackCardProps.desc}</p>
       <button>
-        <img src="/images/icons/like-small.png" />
+        <img src="/icons/like-small.png" />
         {feedbackCardProps.suggestion}
       </button>
     </div>

@@ -1,40 +1,47 @@
 import styles from "./FilterCard.module.css";
 import { getServices } from "../../../api/service.ts";
 import { Service } from "../../../model/service.ts";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { getSpecialities } from "../../../api/speciality.ts";
 import { Speciality } from "../../../model/speciality.ts";
+import { Gender } from "../../../enums/gender.ts";
+import RadioList from "../../RadioList/RadioList.tsx";
 
 type Props = {
-  onGenderChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  onSpecialtyChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  onServiceChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  activeService: Service | null;
+  activeSpeciality: Speciality | null;
+  activeGender: Gender | null;
+  onGenderChange: (item: Gender | null) => void;
+  onSpecialtyChange: (item: Speciality | null) => void;
+  onServiceChange: (item: Service | null) => void;
+  onReset: () => void;
 };
 
 function FilterCard({
+  activeService,
+  activeSpeciality,
+  activeGender,
   onGenderChange,
   onSpecialtyChange,
   onServiceChange,
+  onReset,
 }: Props) {
   const [services, setServices] = useState<Service[]>([]);
-  const [speciality, setSpeciality] = useState<Speciality[]>([]);
+  const [specialities, setSpecialities] = useState<Speciality[]>([]);
 
   useEffect(() => {
     getServices().then((x: Service[]) => setServices(x));
-    getSpecialities().then((x: Speciality[]) => setSpeciality(x));
-    document.getElementById("allSpeciality").checked = true;
-    document.getElementById("bothGender").checked = true;
-    document.getElementById("allServices").checked = true;
+    getSpecialities().then((x: Speciality[]) => setSpecialities(x));
   }, []);
 
   return (
     <div className={styles["filter-card"]}>
       <div className={styles.title}>
         <div className={styles.filter}>
-          <img src="./images/icons/filter.png" alt="Filter" />
+          <img src="./icons/filter.png" alt="Filter" />
           <span>فیلتر کردن</span>
         </div>
-        <button>حذف فیلترها</button>
+        <button onClick={onReset}>حذف فیلترها</button>
       </div>
 
       <div className={styles.content}>
@@ -43,77 +50,43 @@ function FilterCard({
         <div className={styles.option}>
           <div>
             <button>
-              <img src="./images/icons/green-call.png" />
+              <img className={styles.call} src="./icons/call-calling.svg" />
             </button>
 
             <span className={styles.green + " body-b1-medium"}>تلفنی</span>
           </div>
           <div>
             <button>
-              <img src="./images/icons/online-bigsize.png" />
+              <img src="./icons/online.svg" />
             </button>
             <span className={"body-b1-medium"}>آنلاین</span>
           </div>
           <div>
             <button>
-              <img src="./images/icons/bulding-bigsize.png" />
+              <img src="./icons/hospital.svg" />
             </button>
             <span className={"body-b1-medium"}>حضوری</span>
           </div>
         </div>
         <div className={styles.line}></div>
+        <RadioList
+          items={specialities}
+          radioGroupName={"specialities"}
+          radioListCaption={"تخصص"}
+          activeItem={activeSpeciality}
+          onChange={onSpecialtyChange}
+        />
 
-        <div className={styles.container}>
-          <span>تخصص:</span>
-          {speciality.map((item: Speciality) => (
-            <div>
-              <input
-                type="radio"
-                id="speciality"
-                name="specialities"
-                value={item.id}
-                onChange={onSpecialtyChange}
-              />
-              <label htmlFor="speciality">{item.name}</label>
-            </div>
-          ))}{" "}
-          <div>
-            <input
-              type="radio"
-              id="allSpeciality"
-              value="0"
-              name="specialities"
-              onChange={onSpecialtyChange}
-            />
-            <label htmlFor="allSpeciality">همه</label>
-          </div>
-        </div>
         <div className={styles.line}></div>
-        <div className={styles.container}>
-          <span>خدمات:</span>
-          {services.map((item) => (
-            <div>
-              <input
-                type="radio"
-                id={"service" + item.id}
-                name="services"
-                value={item.id}
-                onChange={onServiceChange}
-              />
-              <label htmlFor="service">{item.name}</label>
-            </div>
-          ))}
-          <div>
-            <input
-              type="radio"
-              id="allServices"
-              value="0"
-              name="services"
-              onChange={onServiceChange}
-            />
-            <label htmlFor="allServices">همه</label>
-          </div>
-        </div>
+
+        <RadioList
+          items={services}
+          radioGroupName={"services"}
+          radioListCaption={"خدمات:"}
+          activeItem={activeService}
+          onChange={onServiceChange}
+        />
+
         <div className={styles.line}></div>
         <div className={styles.container}>
           <span>جنسیت:</span>
@@ -122,31 +95,33 @@ function FilterCard({
               type="radio"
               id="bothGender"
               name="gender"
-              value="2"
-              onChange={onGenderChange}
+              checked={activeGender === null}
+              onChange={() => onGenderChange(null)}
             />
-            <label htmlFor="both">هر دو</label>
+            <label htmlFor="bothGender">هر دو</label>
           </div>
 
           <div>
             <input
               type="radio"
-              id="female"
+              id="gender-female"
               name="gender"
-              value="1"
-              onChange={onGenderChange}
+              value={Gender.FEMALE}
+              onChange={() => onGenderChange(Gender.FEMALE)}
+              checked={activeGender === Gender.FEMALE}
             />
-            <label htmlFor="female">زن</label>
+            <label htmlFor="gender-female">زن</label>
           </div>
           <div>
             <input
               type="radio"
-              id="male"
+              id="gender-male"
               name="gender"
-              value="0"
-              onChange={onGenderChange}
+              value={Gender.MALE}
+              checked={activeGender === Gender.MALE}
+              onChange={() => onGenderChange(Gender.MALE)}
             />
-            <label htmlFor="male">مرد</label>
+            <label htmlFor="gender-male">مرد</label>
           </div>
         </div>
         <div className={styles.line}></div>

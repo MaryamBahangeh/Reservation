@@ -66,6 +66,13 @@
     --contrast-hover-color: hsl(0, 0%, 98%);
   }
 
+  &.verysmall {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    padding-block: 0.5rem;
+    padding-inline: 1.2rem;
+  }
+
   &.small {
     font-size: 1.4rem;
     line-height: 1.8rem;

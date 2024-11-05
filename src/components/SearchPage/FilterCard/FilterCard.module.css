@@ -46,6 +46,11 @@
           border: none;
           background-color: transparent;
           cursor: pointer;
+          img {
+            background-color: var(--primary-color);
+            border-radius: 100%;
+            padding: 1.2rem;
+          }
         }
         .green {
           color: var(--primary-color);

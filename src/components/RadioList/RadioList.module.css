@@ -1,0 +1,12 @@
+.radio-list {
+  display: flex;
+  gap: 2.4rem;
+  flex-flow: row wrap;
+  div {
+    display: flex;
+    gap: 0.3rem;
+  }
+  span {
+    margin-inline-end: 2.2rem;
+  }
+}

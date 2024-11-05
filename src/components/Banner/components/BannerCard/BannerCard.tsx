@@ -17,7 +17,7 @@ function BannerCard({ isPrimary, title, description, btnText, img }: props) {
         <p className={styles.subtitle}>{description}</p>
         <button>
           {btnText}
-          <img alt="" src="/images/icons/arrow-left-black.png" />
+          <img alt="" src="/icons/arrow-left-black.png" />
         </button>
       </div>
       <img alt="" src={img} className={styles.pic} />
