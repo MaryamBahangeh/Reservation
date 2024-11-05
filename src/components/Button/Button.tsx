@@ -1,5 +1,6 @@
 import styles from "./Button.module.css";
-import { ButtonHTMLAttributes, PropsWithChildren } from "react";
+import { ButtonHTMLAttributes, PropsWithChildren, ReactElement } from "react";
+import { IconProps } from "iconsax-react";
 
 export enum Variant {
   FILL = "fill",
@@ -35,9 +36,9 @@ type Props = HtmlButtonProps &
     variant: Variant;
     color: Color;
     size: Size;
-    prefix?: string;
+    prefix?: ReactElement<IconProps>;
     buttonText: string;
-    suffix?: string;
+    suffix?: ReactElement<IconProps>;
   };
 
 function Button({
@@ -56,8 +57,9 @@ function Button({
       {...rest}
     >
       {children}
-      {prefix != undefined && <img src={prefix} alt="" />}
-      {buttonText} {suffix != undefined && <img src={suffix} alt="" />}
+      {prefix != undefined && prefix}
+      {buttonText}
+      {suffix != undefined && suffix}
     </button>
   );
 }

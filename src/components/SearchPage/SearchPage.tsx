@@ -10,6 +10,7 @@ import Button, { Color, Size, Variant } from "../Button/Button.tsx";
 import Search from "../Search/Search.tsx";
 import { Speciality } from "../../model/speciality.ts";
 import { Gender } from "../../enums/gender.ts";
+import { ArrowLeft } from "iconsax-react";
 
 function SearchPage() {
   const [doctors, setDoctors] = useState<Person[]>([]);
@@ -111,9 +112,8 @@ function SearchPage() {
                 size={Size.MEDIUM}
                 color={Color.WHITE}
                 buttonText="دریافت بیمه"
-                suffix="./icons/arrow-left.svg"
+                suffix={<ArrowLeft color="deeppink" />}
               ></Button>
-              <img className={styles.arrow} src="./icons/arrow-left.svg" />
             </div>
           </div>
         </div>
