@@ -20,7 +20,7 @@ function Card({ person }: props) {
         <div className={styles.special}>{person.specialtyName}</div>
         <div className={styles.client}>{happyPatient}</div>
         <div className={styles.fields}>
-          {person.services.map((service: Service) => (
+          {person.services.slice(0, 3).map((service: Service) => (
             <button>{service.name}</button>
           ))}
         </div>

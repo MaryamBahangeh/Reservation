@@ -1,5 +1,6 @@
 import styles from "./Search.module.css";
 import Button, { Color, Size, Variant } from "../Button/Button.tsx";
+import { Location } from "iconsax-react";
 
 function Search({ className }: { className?: string }) {
   return (
@@ -14,10 +15,9 @@ function Search({ className }: { className?: string }) {
         variant={Variant.OUTLINE}
         color={Color.PRIMARY}
         size={Size.MEDIUM}
-        buttonText="انتخاب شهر"
-        prefix="/icons/green-location.png"
+        prefixIcon={<Location />}
       >
-        {" "}
+        انتخاب شهر
       </Button>
     </div>
   );

@@ -1,6 +1,7 @@
 import styles from "./DoctorCard.module.css";
 import Button, { Color, Size, Variant } from "../../Button/Button.tsx";
 import { Person } from "../../../model/person.ts";
+import { ArrowLeft } from "iconsax-react";
 
 function DoctorCard({ person }: { person: Person }) {
   const getServiceNames = (person: Person) => {
@@ -66,32 +67,36 @@ function DoctorCard({ person }: { person: Person }) {
             variant={Variant.OUTLINE}
             size={Size.VERYSMALL}
             color={Color.PRIMARY}
-            buttonText="سالن انتظار"
             {...[styles.buttonx]}
-          ></Button>
+          >
+            سالن انتظار
+          </Button>
           <Button
             variant={Variant.OUTLINE}
             size={Size.VERYSMALL}
             color={Color.PRIMARY}
-            buttonText="آسانسور"
             {...[styles.buttonx]}
-          ></Button>
+          >
+            آسانسور
+          </Button>
 
           <Button
             variant={Variant.OUTLINE}
             size={Size.VERYSMALL}
             color={Color.PRIMARY}
-            buttonText="پارکینگ"
             {...[styles.buttonx]}
-          ></Button>
+          >
+            پارکینگ
+          </Button>
 
           <Button
             variant={Variant.OUTLINE}
             size={Size.VERYSMALL}
             color={Color.PRIMARY}
-            buttonText="تخت بیمار"
             {...[styles.buttonx]}
-          ></Button>
+          >
+            تخت بیمار
+          </Button>
         </div>
 
         <div className={styles["working-times"]}>
@@ -116,9 +121,10 @@ function DoctorCard({ person }: { person: Person }) {
           variant={Variant.FILL}
           size={Size.MEDIUM}
           color={Color.PRIMARY}
-          buttonText="دریافت نوبت"
-          suffix="./icons/arrow-left.png"
-        ></Button>
+          suffixIcon={<ArrowLeft />}
+        >
+          دریافت نوبت
+        </Button>
       </div>
     </div>
   );
