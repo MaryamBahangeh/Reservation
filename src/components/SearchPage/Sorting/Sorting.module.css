@@ -1,0 +1,27 @@
+.sorting {
+  display: flex;
+  gap: 4rem;
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-1);
+    font-size: 2rem;
+    font-weight: 600;
+    color: hsl(0, 0%, 7%);
+  }
+  .list {
+    list-style: none;
+    display: flex;
+    gap: var(--spacing-4);
+    li:first-child a {
+      color: hsl(173, 57%, 28%);
+    }
+    li > a {
+      font-weight: 500;
+      font-size: 1.4rem;
+      color: hsl(0, 0%, 52%);
+    }
+  }
+}

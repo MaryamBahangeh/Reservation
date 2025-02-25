@@ -1,0 +1,97 @@
+.filter-card {
+  padding-block: 4rem;
+  padding-inline: 2.4rem;
+  display: grid;
+  gap: 4rem;
+  background-color: var(--white-100);
+  color: var(--color-text-02);
+  border-radius: 1.6rem;
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: hsl(0, 0%, 57%);
+    font-size: 1.4rem;
+    .filter {
+      display: flex;
+      gap: 0.8rem;
+      justify-content: center;
+      align-items: center;
+      font-size: 2.2rem;
+      font-weight: 500;
+      color: var(--color-text-02);
+    }
+    > button {
+      background-color: transparent;
+      color: hsl(0, 0%, 57%);
+      font-size: 1.4rem;
+      border: none;
+    }
+  }
+
+  .content {
+    display: grid;
+    gap: 2.4rem;
+    grid-template-columns: min-content;
+    .option {
+      display: flex;
+      gap: 8.2rem;
+
+      div {
+        display: grid;
+        gap: 0.8rem;
+        justify-items: center;
+        button {
+          border: none;
+          background-color: transparent;
+          cursor: pointer;
+          img {
+            background-color: var(--primary-color);
+            border-radius: 100%;
+            padding: 1.2rem;
+          }
+        }
+        .green {
+          color: var(--primary-color);
+        }
+      }
+    }
+    .line {
+      border-block-start: 0.1rem solid hsl(0, 0%, 80%);
+    }
+    .container {
+      display: flex;
+      gap: 2.4rem;
+      flex-flow: row wrap;
+      div {
+        display: flex;
+        gap: 0.3rem;
+      }
+      span {
+        margin-inline-end: 2.2rem;
+      }
+    }
+    .data-container {
+      display: grid;
+      gap: 1.6rem;
+    }
+    .date {
+      display: flex;
+      gap: 1.6rem;
+    }
+    .facility {
+      display: flex;
+      gap: 1.2rem;
+
+      button {
+        background-color: var(--background);
+        border-radius: 2.4rem;
+        border: none;
+        font-size: 1.2rem;
+        padding-inline: 1.2rem;
+        padding-block: 0.2rem;
+      }
+    }
+  }
+}

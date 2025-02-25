@@ -23,13 +23,13 @@ function FeedbackCard({
           <div className={styles.date}> تاریخ: {feedbackCardProps.date}</div>
         </div>
         <span className={styles.rate}>
-          {feedbackCardProps.star} <img src="/images/icons/star.png" />
+          {feedbackCardProps.star} <img src="/icons/star.png" />
         </span>
       </div>
 
       <p>{feedbackCardProps.desc}</p>
       <button>
-        <img src="/images/icons/like.png" />
+        <img src="/icons/like.png" />
         {feedbackCardProps.suggestion}
       </button>
     </div>

@@ -80,7 +80,7 @@
   }
 }
 
-@media (max-width: 120rem) {
+@media (max-width: 1200px) {
   .content {
     flex-direction: column;
     .news-letter {

@@ -1,0 +1,147 @@
+.doctor-card {
+  display: grid;
+  gap: var(--spacing-4);
+  background-color: var(--white-100);
+  border-radius: 1.6rem;
+  padding-inline: 2.4rem;
+  padding-block: 2.4rem;
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+
+    .doctor {
+      display: grid;
+      align-items: center;
+      grid-template-areas: "img name" "img speciality";
+      gap: var(--spacing-3);
+
+      img {
+        grid-area: img;
+        border-radius: 100%;
+        height: 100px;
+        width: 100px;
+      }
+
+      .name {
+        grid-area: name;
+        font-size: 2.2rem;
+        font-weight: 500;
+        color: hsl(0, 0%, 25%);
+      }
+
+      .speciality {
+        grid-area: speciality;
+        font-size: 1.6rem;
+        color: hsl(0, 0%, 46%);
+      }
+    }
+
+    .rate {
+      display: grid;
+      gap: var(--spacing-3);
+      padding-block: 1rem;
+      justify-items: end;
+      .percent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--spacing-1);
+        font-size: 1.2rem;
+        color: hsl(173, 57%, 28%);
+        background-color: hsl(0, 0%, 94%);
+        padding-block: 0.4rem;
+        padding-inline: 0.8rem;
+        border-radius: 0.4rem;
+      }
+      .star {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-inline-start: var(--spacing-3);
+        gap: var(--spacing-1);
+        font-size: 1.2rem;
+        color: hsl(0, 0%, 31%);
+      }
+    }
+  }
+  .line {
+    border-block-start: 0.1rem solid hsl(0, 0%, 80%);
+  }
+  .content {
+    display: grid;
+    gap: var(--spacing-4);
+    font-size: 1.6rem;
+
+    .service-title {
+      font-weight: 600;
+      color: hsl(0, 0%, 25%);
+
+      .subtitle {
+        color: hsl(0, 0%, 49%);
+      }
+    }
+
+    .content-title {
+      font-size: 1.6rem;
+    }
+    .types-container {
+      display: flex;
+      gap: 1.6rem;
+      color: hsl(0, 0%, 0%);
+      font-size: 1.4rem;
+      align-items: center;
+
+      .type {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.8rem;
+        font-size: 1.4rem;
+        color: hsl(0, 0%, 0%);
+      }
+    }
+
+    .options {
+      display: flex;
+      gap: 1.2rem;
+      button {
+        border-radius: 20rem;
+      }
+    }
+
+    .working-times {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.2rem;
+
+      .times {
+        display: flex;
+        gap: 0.8rem;
+        justify-content: center;
+        align-items: center;
+      }
+      .success {
+        display: flex;
+        gap: 0.8rem;
+        color: hsl(173, 57%, 28%);
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .address-container {
+    display: flex;
+    justify-content: space-between;
+
+    .address {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.8rem;
+      font-size: 1.6rem;
+      color: hsl(0, 0%, 25%);
+    }
+  }
+}

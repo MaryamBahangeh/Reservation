@@ -1,3 +1,8 @@
 :root {
-  --color-primary: green;
+  --primary-color: hsl(173, 57%, 28%);
+  --white-100: hsl(0, 0%, 99%);
+  --color-text-02: hsl(0, 0%, 25%);
+  --background: hsl(0, 0%, 96%);
+  --accent: hsl(36, 100%, 87%);
+  --netrual-grey-50: hsl(0, 0%, 95%);
 }

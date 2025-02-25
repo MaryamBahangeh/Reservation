@@ -15,7 +15,7 @@ function MainNav() {
             </li>
             <li>
               <a className={styles["menu-service"]} href="#">
-                خدمات <img alt="" src="/images/icons/arrow-down.png"></img>
+                خدمات <img alt="" src="/icons/arrow-down.png"></img>
               </a>
             </li>
             <li>
@@ -26,14 +26,14 @@ function MainNav() {
             </li>
             <li>
               <a className={styles["red-botton"]} href="#">
-                <img src="./images/icons/red-botton.png" /> نیکوکاری
+                <img src="./icons/red-botton.png" /> نیکوکاری
               </a>
             </li>
           </ul>
         </nav>
       </div>
       <div className={styles["main-nav-Button"]}>
-        <img src="/images/icons/bell.png" />
+        <img src="/icons/bell.png" />
         <button className={styles.loginbtn}>ورود/ ثبت نام</button>
       </div>
     </div>
